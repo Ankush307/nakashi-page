@@ -38,7 +38,7 @@
 
 <body>
     <!-- ==================hero section-----------=========== -->
-    <section
+    <section id="hero-section"
         class="flex justify-center bg-cover bg-no-repeat bg-top lg:bg-left max-sm:bg-bottom lg:bg-[url('./assets/image/webp/hero-bg-img.png')] max-lg:bg-[url('./assets/image/webp/bg-top-sm.png')]">
         <div class="container">
             <nav class="pt-[48px] pb-[3px] !flex justify-between  max-xl:px-8">
@@ -97,7 +97,7 @@
                     <div class="flex items-center lg:gap-10 xl:translate-x-[-100px]">
                         <div class="max-w-[72px] flex items-center flex-col">
                             <p
-                                class="text-white flex flex-col lg:text-7xl md:text-6xl sm:text-5xl text-4xl mt-24 max-lg:hidden">
+                                class="text-white flex flex-col lg:text-7xl md:text-6xl sm:text-5xl text-4xl max-lg:hidden mb-12">
                                 <span>仲</span><span>仕</span>
                             </p>
                             <p class="bg-white w-0.5 h-[344px] max-lg:hidden"></p>
@@ -113,7 +113,7 @@
                                 4000 Pages Manga NFTs Collections</p>
                         </div>
                     </div>
-                    <div class="flex gap-4 mt-12 xl:translate-x-[-100px] max-lg:hidden ">
+                    <div class="flex gap-4 mt-24 xl:translate-x-[-100px] max-lg:hidden lg:mb-8">
                         <a href="/"
                             class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
                                 src="./assets/image/svg/telegram-icon.svg" alt="telegram icon"></a>
@@ -127,28 +127,29 @@
                             class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
                                 src="./assets/image/svg/ship-icon.svg" alt="telegram icon"></a>
                     </div>
-                    <img class="lg:hidden w-full" src="./assets/image/webp/hero-sec-lower-layer.png" alt="lower layer">
+                    <img class="lg:hidden w-full " src="./assets/image/webp/hero-sec-lower-layer.png" alt="lower layer">
                 </div>
-                <div class="lg:w-7/12">
+                <div class="lg:w-7/12 lg:relative">
                     <p class="text-white flex flex-col text-7xl mt-24 lg:hidden max-w-[72px] mb-[-222px]">
                         <span>仲</span><span>仕</span>
-                    </p>
-                    <img class="mb-[-109px] lg:mb-0 max-lg:relative z-10" src="./assets/image/webp/hero-sec-img.png"
+                    </p> 
+                    <img class="mb-[-109px] lg:mb-0 max-lg:relative z-10 lg:min-w-[750px] lg:h-[1000px] lg:absolute right-[15%]" src="./assets/image/webp/hero-sec-img.png"
                         alt="hero img">
+                       <a href="#section-2" ><img class="max-lg:hidden lg:absolute bottom-0 right-0" src="./assets/image/webp/top-bottom.png" alt="top-bottom"></a>
                 </div>
             </div>
         </div>
     </section>
     <!-- =============About us section--================= -->
-    <section
-        class="flex relative flex-col min-h-screen justify-center bg-cover bg-no-repeat bg-top lg:!bg-left lg:bg-[url('./assets/image/webp/sec-2-bg-img.png')] bg-[url('./assets/image/webp/sec-2-sm-bg.png')]">
-        <div class="container max-lg:px-5">
+    <section id="section-2"
+        class="flex relative flex-col mt-[-1px] min-h-screen justify-center bg-cover bg-no-repeat bg-top lg:!bg-left lg:bg-[url('./assets/image/webp/sec-2-bg-img.png')] bg-[url('./assets/image/webp/sec-2-sm-bg.png')]">
+        <div class="container max-lg:px-5 ">
             <div class="flex flex-wrap lg:mt-0 mt-60 lg:mb-0 mb-24">
                 <div class="lg:w-6/12 w-full flex items-center justify-center">
                     <p class="text-9xl text-white sawarabi-gothic text-center ">約</p>
                 </div>
                 <div class="lg:w-6/12 w-full">
-                    <p class="md:text-lg text-white sm:text-base text-sm lg:text-start text-center mt-[100px]">ABOUT
+                    <p class="md:text-lg text-white sm:text-base text-sm lg:text-start text-center mt-[100px] mb-2.5">ABOUT
                     </p>
                     <p
                         class="lg:text-[64px] sm:text-5xl text-4xl text-white leading-[100%] lg:text-start text-center flex-col flex">
@@ -171,7 +172,7 @@
         <div class="container max-w-[1320px] max-lg:px-4">
             <div class="flex flex-wrap max-lg:flex-col-reverse justify-center items-center">
                 <div class="lg:w-5/12 justify-center flex flex-col">
-                    <p class="text-sm font-light lg:mt-0 mt-4 lg:text-start text-center">PAGES</p>
+                    <p class="text-sm font-light lg:mt-0 mt-4 lg:text-start text-center mb-2.5">PAGES</p>
                     <h2 id="counter"
                         class="lg:text-8xl text-customLg tracking-[4%] leading-none hyper lg:mb-10 md:mb-7 mb-5">
                         1</h2>
@@ -190,9 +191,9 @@
     </section>
     <!-- ==================slider-1 --------================-->
     <section
-        class="px-3 flex items-center pt-[100px] pb-[200px] bg-[url(./assets/image/webp/faq-bg-img.png)] bg-cover bg-no-repeat relative -mt-1">
+        class="px-3 flex items-center lg:pt-[100px] sm:pt-16 pt-12  lg:pb-[200px] sm:pb-24 pb-12 bg-[url(./assets/image/webp/character-bg-img.png)] bg-cover bg-no-repeat relative -mt-1">
         <div class="container">
-            <div class="flex items-center max-lg:flex-col">
+            <div class="flex items-center max-lg:flex-col-reverse">
                 <div class="w-6/12 max-lg:w-full">
                     <div
                         class="max-lg:mx-auto max-lg:bg-[url(./assets/image/svg/chara-small.svg)] h-fit bg-[url(./assets/image/webp/chara-bg-img.png)]  bg-no-repeat bg-center max-w-[531px]">
@@ -200,7 +201,7 @@
                             CHARACTER</p>
                         <p class="leading-[100%] text-white font-normal text-2xl max-lg:text-center">キャラクター</p>
                     </div>
-                    <p class="max-w-[461px] font-light text-sm leading-[150%] text-[#F4F4F4] pt-10">Lorem ipsum is
+                    <p class="max-w-[461px] font-light text-sm leading-[150%] text-[#F4F4F4] lg:pt-20 md:pt-16 pt-[50px]">Lorem ipsum is
                         simply dummy
                         text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                         dummy text ever
@@ -210,9 +211,9 @@
 
                     <div
                         class="max-md:bg-cover bg-[url(./assets/image/webp/chara-text-bg-img.png)] bg-no-repeat bg-cover max-w-[655px] mt-28 max-lg:mt-10 max-md:mt-5 max-lg:mb-10 max-md:mb-5">
-                        <p class="font-hyper text-white text-5xl leading-[100%] font-normal pt-[60px] ps-[60px]">THALIK
+                        <p class="hyper text-white text-5xl leading-[100%] font-normal pt-[60px] ps-[60px]">THALIK
                         </p>
-                        <p class="ps-[60px] text-[#F4F4F4] text-sm font-light max-w-[408px] pt-4 leading-[150%]">
+                        <p class="ps-[60px] text-[#F4F4F4] text-sm font-light max-w-[415px] pt-4 leading-[150%]">
                             Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the
                             industry's standard dummy text ever since the 1500s.</p>
@@ -241,14 +242,14 @@
                             </p>
                         </div>
                         <div class="anime-slider flex items-center gap-6 overflow-hidden">
-                            <img src="/assets/image/webp/slick-slider-img1.png" alt="slider-1-img"
-                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-                            <img src="/assets/image/webp/slick-slider-img2.png" alt="slider-2-img"
-                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-                            <img src="/assets/image/webp/slick-slider-img1.pngp" alt="slider-1-img"
-                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-                            <img src="/assets/image/webp/slick-slider-img2.png" alt="slider-2-img"
-                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                            <img src="/assets/image/webp/slick-slider-img1.png" alt="green-flash"
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
+                          <img src="/assets/image/webp/slick-slider-img2.png" alt="nakashi-img"
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
+                          <img src="/assets/image/webp/slick-slider-img1.png" alt="green-flash"
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
+                          <img src="/assets/image/webp/slick-slider-img2.png" alt="nakashi-img"
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
                         </div>
                     </div>
                 </div>
@@ -256,7 +257,7 @@
         </div>
     </section>
     <!-- ====================slider-2============== -->
-    <section id="quote" class="max-w-[1920px] relative mb-[90px] mx-auto">
+    <section id="quote" class="max-w-[1920px] relative lg:mb-[90px] sm:pb-16 pb-8 mx-auto">
         <div><img class="mt-[-1px]" src="./assets/image/webp/sec-2-bottom-layer.png" alt=""></div>
         <div class="container mt-12 max-xl:px-4">
             <div class="flex flex-wrap justify-between">
@@ -579,15 +580,15 @@
         </div>
     </section>
     <!-- =================video section----================= -->
-    <section class="flex min-h-screen relative justify-center items-center">
-        <div class="container max-w-[1140px] flex items-center justify-center flex-col lg:px-0 sm:px-3 px-5 ">
-            <img src="./assets/image/webp/play-img.png" alt="play text">
-            <p class="text-2xl mt-[100px] mb-6">Mixed reality NFTs project</p>
-            <p class="text-sm max-w-[752px] text-center mx-auto font-light leading-[150%] tracking-[2%] mb-12">Lorem
+    <section class="flex min-h-screen relative justify-center items-center pb-[50px]">
+        <div class="container max-w-[1140px] flex items-center justify-center flex-col lg:px-0">
+            <img class=" sm:px-3 px-5 " src="./assets/image/webp/play-img.png" alt="play text ">
+            <p class="text-2xl  sm:px-3 px-5  lg:mt-[100px] sm:mt-16 mt-8 mb-6">Mixed reality NFTs project</p>
+            <p class="text-sm  sm:px-3 px-5  max-w-[752px] text-center mx-auto font-light leading-[150%] tracking-[2%] mb-12">Lorem
                 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book.</p>
-            <div><img class="w-full sm:max-w-[400px] max-w-[200px]" src="./assets/image/svg/blue-btn.svg"
+            <div><img class="w-full  sm:px-3 px-5  sm:max-w-[400px] max-w-[200px]" src="./assets/image/svg/blue-btn.svg"
                     alt="blue btn"></div>
             <div class="max-w-[1140px] bg-black">
                 <div class="flex flex-wrap justify-end">
@@ -604,13 +605,16 @@
                 </div>
             </div>
         </div>
+        <img class="absolute w-full bottom-[-1px]" src="./assets/image/webp/sec-3-bottom-layer.png" alt="lower layer">
     </section>
     <!-- ==============Road map section-================== -->
     <section
         class="flex lg:pt-[100px] lg:pb-[100px] pt-10 pb-10 flex-col min-h-screen bg-[url('./assets/image/webp/faq-bg-img.png')] relative justify-center items-center">
-        <img class="max-w-[784px] mx-auto w-full  lg:mb-[100px] sm:mb-16 mb-[50px]" src="./assets/image/webp/roadmap-img.png" alt="roadmap">
+        <img class="max-w-[784px] mx-auto w-full  lg:mb-[100px] sm:mb-16 mb-[50px]"
+            src="./assets/image/webp/roadmap-img.png" alt="roadmap">
         <div class="container max-lg:px-3">
-            <h2 class="text-white text-center lg:text-2xl sm:text-xl text-base max-sm:px-16">There’s more than one star in the galaxy</h2>
+            <h2 class="text-white text-center lg:text-2xl sm:text-xl text-base max-sm:px-16">There’s more than one star
+                in the galaxy</h2>
             <div class="overflow-hidden max-w-[700px] w-full mx-auto">
                 <img class="max-w-[700px] mx-auto w-full animate-spin" src="./assets/image/webp/galaxy-img.png"
                     alt="galaxy">
@@ -701,11 +705,13 @@
     <!-- =================team-slider======================= -->
     <section class="text-white py-16 bg-[url('./assets/image/webp/faq-bg-img.png')]">
         <div class="container mx-auto px-4 ">
-            <img class="mx-auto lg:mb-[100px] sm:mb-16 mb-[50px] max-sm:max-w-[233px]" src="/assets/image/webp/team-logo.png" alt="">
-            <p class="text-center lg:mb-[100px] sm:mb-16 mb-[50px] text-white font-light lg:text-2xl sm:text-xl text-base leading-[30px] ">
+            <img class="mx-auto lg:mb-[100px] sm:mb-16 mb-[50px] max-sm:max-w-[233px]"
+                src="/assets/image/webp/team-logo.png" alt="">
+            <p
+                class="text-center lg:mb-[100px] sm:mb-16 mb-[50px] text-white font-light lg:text-2xl sm:text-xl text-base leading-[30px] ">
                 See who's behind this cool project
             </p>
-            <div class="flex lg:mb-[100px] md:mb-16 mb-[50px] max-lg:hidden">
+            <div class="flex lg:mb-[100px] md:mb-16 mb-[50px] max-xl:hidden">
                 <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
                     <img src="./assets/image/webp/team-1-img.png" alt="team img">
                     <div class="flex items-center mt-[-1px]">
@@ -907,7 +913,7 @@
                 </div>
             </div>
 
-            <div class="flex max-lg:hidden justify-center overflow-x-auto">
+            <div class="flex max-xl:hidden justify-center overflow-x-auto">
                 <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
                     <img src="./assets/image/webp/team-member-5.png" alt="team img">
                     <div class="flex items-center mt-[-1px]">
@@ -991,7 +997,7 @@
                         typesetting industry.</p>
                 </div>
             </div>
-            <div class="lg:!hidden items-center justify-center gap-6 slider overflow-hidden">
+            <div class="xl:!hidden items-center justify-center gap-6 slider overflow-hidden">
                 <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
                     <img src="./assets/image/webp/team-1-img.png" alt="team img">
                     <div class="flex items-center mt-[-1px]">
@@ -1201,9 +1207,11 @@
             <img class="absolute pointer-events-none lg:max-h-[908px] min-h-[900px] max-lg:hidden"
                 src="./assets/image/webp/accordian-corner-img.png" alt="accordion-around-img">
             <div class="">
-                <img class="max-w-[319px] w-full lg:mb-[100px] sm:mb-16 mb-[50px] max-sm:max-w-[160px]" src="./assets/image/webp/fag-img.png " alt="fag-img">
+                <img class="max-w-[319px] w-full lg:mb-[100px] sm:mb-16 mb-[50px] max-sm:max-w-[160px]"
+                    src="./assets/image/webp/fag-img.png " alt="fag-img">
             </div>
-            <h4 class="tracking-[2%] mx-auto max-w-[314px]lg:mb-[100px] sm:mb-16  text-white font-light lg:text-2xl sm:text-xl text-base lg:mb-[100px] mb-[50px] text-center">
+            <h4
+                class="tracking-[2%] mx-auto max-w-[314px]lg:mb-[100px] sm:mb-16  text-white font-light lg:text-2xl sm:text-xl text-base lg:mb-[100px] mb-[50px] text-center">
                 Frequently Asked Question</h4>
             <div class="max-w-[752px] mx-auto">
                 <div class="lg:space-y-5 space-y-4">
@@ -1312,7 +1320,7 @@
         </div>
     </section>
     <!-- =====================join us  section-============---==== -->
-    <section class="flex min-h-screen justify-center items-center"
+     <section class="flex min-h-screen justify-center items-center"
         style="background-image: url(./assets/image/webp/squad-bg-img.png);">
         <div class="container max-w-[1440px]">
             <div class="flex flex-wrap">
@@ -1363,7 +1371,7 @@
         </div>
     </section>
     <!-- ======================footer============================== -->
-    <footer class="flex justify-center items-center"
+     <footer class="flex justify-center items-center"
         style="background-image: url(./assets/image/webp/squad-bg-img.png);">
         <div class="container mt-28 mb-28">
             <div class="flex flex-wrap lg:justify-between justify-around">
@@ -1372,7 +1380,7 @@
                     <p class="text-white ">COPYRIGHT © 2022. all rights reserved</p>
                 </div>
                 <div class="lg:w-2/12 w-full flex flex-col items-center justify-center max-lg:hidden">
-                    <a href="/">
+                    <a href="#hero-section">
                         <svg class="flex animate-bounce" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.5 14.9998L12 7.49976L4.5 14.9998" stroke="white" stroke-linecap="round"
@@ -1397,8 +1405,6 @@
             </div>
         </div>
     </footer>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
