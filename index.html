@@ -1,0 +1,1412 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakashi</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/reality-hyper" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/image/webp/nakashi-hero-img.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    color: {
+                        'blue': "#403CFF"
+                    },
+
+                    container: {
+                        center: true,
+                        screens: {
+                            sm: '992px',
+                            '2xl': '1140px',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- ==================hero section-----------=========== -->
+    <section
+        class="flex justify-center bg-cover bg-no-repeat bg-top lg:bg-left max-sm:bg-bottom lg:bg-[url('./assets/image/webp/hero-bg-img.png')] max-lg:bg-[url('./assets/image/webp/bg-top-sm.png')]">
+        <div class="container">
+            <nav class="pt-[48px] pb-[3px] !flex justify-between  max-xl:px-8">
+                <a href="/" class="flex justify-center z-[51]"><img src="./assets/image/svg/nakashi-logo.svg"
+                        alt="logo"></a>
+                <div
+                    class="gap-[40px] flex flex-col menulist duration-300 items-center ease-linear text-white w-full -right-full min-h-screen z-50 fixed top-0 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:pt-0 pt-[200px]  backdrop-blur-[40px] lg:bg-transparent">
+                    <a href="/"
+                        class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                        ABOUT</a>
+                    <a href="/"
+                        class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                        CHARACTER</p>
+                        <a href="/"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                            GALLERY</a>
+                        <a href="/"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                            HOW IT WORKS</a>
+                        <a href="/"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                            ROADMAP</a>
+                        <a href="/"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                            TEAM</a>
+                        <a href="/"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                            FAQ</a>
+                        <div class="flex lg:hidden gap-4">
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/telegram-icon.svg" alt="telegram icon"></a>
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/discord-icon.svg" alt="telegram icon"></a>
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/twitter-icon.svg" alt="telegram icon"></a>
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/ship-icon.svg" alt="telegram icon"></a>
+                        </div>
+                </div>
+                <div class="flex justify-center  z-[51] relative lg:hidden">
+                    <div class="flex flex-col lg:hidden menubar justify-between w-8 h-4">
+                        <span
+                            class="w-[22px] h-0.5 flex rounded-md transition-all duration-500 bg-white menubarFirst origin-right translate-x-[9px]"></span>
+                        <span
+                            class="w-full h-0.5 flex rounded-md transition-all duration-500 bg-white menubarSecond origin-right"></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="flex flex-wrap max-lg:flex-col-reverse justify-around ">
+                <div
+                    class="lg:w-5/12 flex items-center flex-col justify-center bg-cover max-lg:bg-[url('./assets/image/webp/hero-sm-bg-img.png')]">
+                    <div class="flex items-center lg:gap-10 xl:translate-x-[-100px]">
+                        <div class="max-w-[72px] flex items-center flex-col">
+                            <p
+                                class="text-white flex flex-col lg:text-7xl md:text-6xl sm:text-5xl text-4xl mt-24 max-lg:hidden">
+                                <span>仲</span><span>仕</span>
+                            </p>
+                            <p class="bg-white w-0.5 h-[344px] max-lg:hidden"></p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p
+                                class="text-sm mb-[29px] tracking-[4%] lg:text-white max-w-[275px] sawarabi-gothic text-center mx-auto lg:mt-0 mt-[100px] ">
+                                ナカシと彼の友人が彼らの宇宙宇宙をゴバーンから救おうとしている物語</p>
+                            <p class="text-sm lg:text-white mb-[17px] text-center max-w-[327px] mx-auto">The story of
+                                Nakashi and his friends trying to save
+                                their universe from Gobern</p>
+                            <p class="text-5xl leading-[110%] max-w-[302px] lg:text-white mx-auto text-center">
+                                4000 Pages Manga NFTs Collections</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-12 xl:translate-x-[-100px] max-lg:hidden ">
+                        <a href="/"
+                            class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                src="./assets/image/svg/telegram-icon.svg" alt="telegram icon"></a>
+                        <a href="/"
+                            class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                src="./assets/image/svg/discord-icon.svg" alt="telegram icon"></a>
+                        <a href="/"
+                            class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                src="./assets/image/svg/twitter-icon.svg" alt="telegram icon"></a>
+                        <a href="/"
+                            class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                src="./assets/image/svg/ship-icon.svg" alt="telegram icon"></a>
+                    </div>
+                    <img class="lg:hidden w-full" src="./assets/image/webp/hero-sec-lower-layer.png" alt="lower layer">
+                </div>
+                <div class="lg:w-7/12">
+                    <p class="text-white flex flex-col text-7xl mt-24 lg:hidden max-w-[72px] mb-[-222px]">
+                        <span>仲</span><span>仕</span>
+                    </p>
+                    <img class="mb-[-109px] lg:mb-0 max-lg:relative z-10" src="./assets/image/webp/hero-sec-img.png"
+                        alt="hero img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============About us section--================= -->
+    <section
+        class="flex relative flex-col min-h-screen justify-center bg-cover bg-no-repeat bg-top lg:!bg-left lg:bg-[url('./assets/image/webp/sec-2-bg-img.png')] bg-[url('./assets/image/webp/sec-2-sm-bg.png')]">
+        <div class="container max-lg:px-5">
+            <div class="flex flex-wrap lg:mt-0 mt-60 lg:mb-0 mb-24">
+                <div class="lg:w-6/12 w-full flex items-center justify-center">
+                    <p class="text-9xl text-white sawarabi-gothic text-center ">約</p>
+                </div>
+                <div class="lg:w-6/12 w-full">
+                    <p class="md:text-lg text-white sm:text-base text-sm lg:text-start text-center mt-[100px]">ABOUT
+                    </p>
+                    <p
+                        class="lg:text-[64px] sm:text-5xl text-4xl text-white leading-[100%] lg:text-start text-center flex-col flex">
+                        <span class="hyper">NAKASHI</span><span class="hyper">PROJECT</span>
+                    </p>
+                    <p
+                        class="text-white sm:max-w-[388px] max-w-[339px] max-lg:mx-auto text-sm font-light lg:ml-[61px] mt-5 md:mt-10">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only five centuries, but also the leap into
+                        electronic typesetting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  =============pages section0---================== -->
+    <section class="flex min-h-screen relative justify-center items-center">
+        <div><img class="absolute top-[-1px]" src="./assets/image/webp/sec-2-bottom-layer.png" alt=""></div>
+        <div class="container max-w-[1320px] max-lg:px-4">
+            <div class="flex flex-wrap max-lg:flex-col-reverse justify-center items-center">
+                <div class="lg:w-5/12 justify-center flex flex-col">
+                    <p class="text-sm font-light lg:mt-0 mt-4 lg:text-start text-center">PAGES</p>
+                    <h2 id="counter"
+                        class="lg:text-8xl text-customLg tracking-[4%] leading-none hyper lg:mb-10 md:mb-7 mb-5">
+                        1</h2>
+                    <p class="sm:max-w-[388px] max-w-[343px] text-sm font-light lg:ml-[73px] md:mt-10 mt-5">Lorem Ipsum
+                        is simply dummy
+                        text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to make a type specimen book.</p>
+                </div>
+                <div class="lg:w-7/12 lg:justify-end flex flex-col">
+                    <img class="w-full max-w-[661px]" src="./assets/image/webp/sec-2-paper-img.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img class="absolute w-full bottom-0" src="./assets/image/webp/sec-3-bottom-layer.png" alt="lower layer">
+    </section>
+    <!-- ==================slider-1 --------================-->
+    <section
+        class="px-3 flex items-center pt-[100px] pb-[200px] bg-[url(./assets/image/webp/faq-bg-img.png)] bg-cover bg-no-repeat relative -mt-1">
+        <div class="container">
+            <div class="flex items-center max-lg:flex-col">
+                <div class="w-6/12 max-lg:w-full">
+                    <div
+                        class="max-lg:mx-auto max-lg:bg-[url(./assets/image/svg/chara-small.svg)] h-fit bg-[url(./assets/image/webp/chara-bg-img.png)]  bg-no-repeat bg-center max-w-[531px]">
+                        <p class="text-white text-[64px] font-normal hyper max-lg:text-4xl max-lg:text-center">
+                            CHARACTER</p>
+                        <p class="leading-[100%] text-white font-normal text-2xl max-lg:text-center">キャラクター</p>
+                    </div>
+                    <p class="max-w-[461px] font-light text-sm leading-[150%] text-[#F4F4F4] pt-10">Lorem ipsum is
+                        simply dummy
+                        text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                        dummy text ever
+                        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen
+                        book.</p>
+
+                    <div
+                        class="max-md:bg-cover bg-[url(./assets/image/webp/chara-text-bg-img.png)] bg-no-repeat bg-cover max-w-[655px] mt-28 max-lg:mt-10 max-md:mt-5 max-lg:mb-10 max-md:mb-5">
+                        <p class="font-hyper text-white text-5xl leading-[100%] font-normal pt-[60px] ps-[60px]">THALIK
+                        </p>
+                        <p class="ps-[60px] text-[#F4F4F4] text-sm font-light max-w-[408px] pt-4 leading-[150%]">
+                            Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the
+                            industry's standard dummy text ever since the 1500s.</p>
+                        <div class="flex ps-[60px] gap-10 pt-8 items-center max-lg:flex-col max-lg:ps-6 max-lg:gap-5">
+                            <p class="text-[#F4F4F4] font-semibold text-base uppercase">Combat</p>
+                            <img src="/assets/image/webp/combat-line-img.png" alt="combat">
+                        </div>
+                        <div
+                            class="flex ps-[60px] gap-[60px] pt-5 items-center pb-[61px] max-lg:flex-col max-lg:ps-6 max-lg:gap-5">
+                            <p class="text-[#F4F4F4] font-semibold text-base uppercase ">skills</p>
+                            <img src="/assets/image/webp/skil-line-img.png" alt="skill">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-6/12 max-lg:w-full">
+                    <div class="">
+                        <div class="flex justify-end">
+                            <p
+                                class="prev-arrow bg-[url(assets/images/png/prevbtn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
+                                <img src="/assets/image/svg/prev-arrow-svg.svg" alt="arrow" />
+                            </p>
+                            <p
+                                class="next-arrow bg-[url(assets/images/png/next-btn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
+                                <img src="/assets/image/svg/next-arrow-svg.svg" alt="arrow" />
+                            </p>
+                        </div>
+                        <div class="anime-slider flex items-center gap-6 overflow-hidden">
+                            <img src="/assets/image/webp/slick-slider-img1.png" alt="slider-1-img"
+                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                            <img src="/assets/image/webp/slick-slider-img2.png" alt="slider-2-img"
+                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                            <img src="/assets/image/webp/slick-slider-img1.pngp" alt="slider-1-img"
+                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                            <img src="/assets/image/webp/slick-slider-img2.png" alt="slider-2-img"
+                                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================slider-2============== -->
+    <section id="quote" class="max-w-[1920px] relative mb-[90px] mx-auto">
+        <div><img class="mt-[-1px]" src="./assets/image/webp/sec-2-bottom-layer.png" alt=""></div>
+        <div class="container mt-12 max-xl:px-4">
+            <div class="flex flex-wrap justify-between">
+                <div class="lg:w-6/12 w-full">
+                    <img class="lg:max-w-[572px] sm:max-w-[400px] max-w-[286px] mx-auto w-full"
+                        src="./assets/image/webp/gallery-logo-img.png" alt="">
+                </div>
+                <div class="lg:w-4/12 w-full flex flex-col lg:items-end justify-center max-lg:mt-[50px]">
+                    <p class="lg:text-start text-center text-lg font-semibold">20 / 100%</p>
+                    <img class="sm:max-w-[364px] max-w-[300px] max-lg:mx-auto"
+                        src="./assets/image/webp/gallery-loder-img.png" alt="gallery loder">
+                </div>
+            </div>
+            <p class="text-center md:text-2xl sm:text-xl text-base font-light lg:mt-24 md:mt-14 mt-[50px] mb-[50px]">
+                4000 pages of story will be made</p>
+            <div class="flex flex-wrap lg:mb-[100px] sm:mb-16 mb-[50px]">
+                <div class="xl:w-3/12 lg:w-4/12 sm:w-1/2 max-2xl:px-3 s w-full max-xl:mb-6 max-sm:mb-4">
+                    <div
+                        class="border-[1px] border-[#CCCCCC] max-w-[267px] xl:mx-0 mx-auto py-6 flex flex-col items-center justify-center hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                        <p class="text-[13px] font-light text-center tracking-[8%]">Listed</p>
+                        <p class="text-sm text-[#909090]"><span
+                                class="text-2xl font-semibold text-black tracking-">800</span> / 4000</p>
+                    </div>
+                </div>
+                <div class="xl:w-3/12 lg:w-4/12 sm:w-1/2 max-2xl:px-3 w-full max-lg:mb-6 max-sm:mb-4">
+                    <div
+                        class="border-[1px] border-[#CCCCCC] max-w-[267px] xl:mx-0 mx-auto py-6 flex flex-col items-center justify-center hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                        <p class="text-[13px] font-light text-center tracking-[8%]">OWNERS</p>
+                        <p class="text-2xl font-semibold text-black tracking-">440</p>
+                    </div>
+                </div>
+                <div class="xl:w-3/12 lg:w-4/12 sm:w-1/2 max-2xl:px-3 w-full max-lg:mb-6 max-sm:mb-4">
+                    <div
+                        class="border-[1px] border-[#CCCCCC] hover:shadow-2xl transition-all duration-300 cursor-pointer max-w-[267px] xl:mx-0 mx-auto py-6 flex flex-col items-center justify-center">
+                        <p class="text-[13px] font-light text-center tracking-[8%]">FLOOR PRICE</p>
+                        <p class="text-2xl font-semibold text-black flex items-center"><span class="mr-2.5"><svg
+                                    width="13" height="20" viewBox="0 0 13 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.6"
+                                        d="M6.13974 7.39502L0 10.1873L6.13974 13.8147L12.2771 10.1873L6.13974 7.39502Z"
+                                        fill="#222222" />
+                                    <path d="M0 10.187L6.13974 13.8144V0L0 10.187Z" fill="#222222" />
+                                    <path d="M6.14062 0V13.8144L12.2779 10.187L6.14062 0Z" fill="#222222" />
+                                    <path d="M0 11.3501L6.13974 19.9998V14.9775L0 11.3501Z" fill="#222222" />
+                                    <path d="M6.14062 14.9775V19.9998L12.2828 11.3501L6.14062 14.9775Z"
+                                        fill="#222222" />
+                                </svg>
+                            </span> 0.12 ETH </p>
+                    </div>
+                </div>
+                <div class="xl:w-3/12 lg:w-full sm:w-1/2 max-2xl:px-3 w-full flex flex-col xl:items-start items-center">
+                    <a href="/" class="max-w-[267px] hover:shadow-2xl">
+                        <svg class="button-hover-1" width="267" height="100" viewBox="0 0 267 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_1_193)">
+                                <path class="path-blue" d="M10 0H267V90L257 100H0V10L10 0Z" fill="#403CFF" />
+                                <line class="line" opacity="0.2" x1="88.5" y1="-2.18557e-08" x2="88.5" y2="100"
+                                    stroke="white" />
+                                <g clip-path="url(#clip0_1_193)">
+                                    <path class="path-white"
+                                        d="M44 30C32.956 30 24 38.956 24 50C24 61.044 32.956 70 44 70C55.044 70 64 61.044 64 50C64 38.956 55.048 30 44 30ZM33.868 50.672L33.952 50.536L39.156 42.396C39.232 42.28 39.412 42.292 39.468 42.42C40.336 44.368 41.088 46.792 40.736 48.3C40.588 48.92 40.176 49.76 39.712 50.536C39.652 50.648 39.588 50.76 39.516 50.868C39.484 50.916 39.428 50.944 39.368 50.944H34.02C33.876 50.944 33.792 50.788 33.868 50.672ZM57.056 53.472C57.056 53.548 57.012 53.612 56.948 53.64C56.544 53.812 55.164 54.448 54.592 55.244C53.128 57.28 52.012 60.192 49.512 60.192H39.088C35.392 60.192 32.4 57.188 32.4 53.48V53.36C32.4 53.264 32.48 53.184 32.58 53.184H38.388C38.504 53.184 38.588 53.288 38.58 53.404C38.536 53.78 38.608 54.168 38.788 54.52C39.132 55.22 39.848 55.656 40.62 55.656H43.496V53.412H40.652C40.508 53.412 40.42 53.244 40.504 53.124C40.536 53.076 40.568 53.028 40.608 52.972C40.876 52.588 41.26 51.996 41.644 51.32C41.904 50.864 42.156 50.376 42.36 49.888C42.4 49.8 42.432 49.708 42.468 49.62C42.524 49.464 42.58 49.316 42.62 49.172C42.66 49.048 42.696 48.92 42.728 48.8C42.824 48.384 42.864 47.944 42.864 47.488C42.864 47.308 42.856 47.12 42.84 46.944C42.832 46.748 42.808 46.552 42.784 46.356C42.768 46.184 42.736 46.012 42.704 45.836C42.66 45.576 42.604 45.316 42.54 45.056L42.516 44.956C42.468 44.776 42.424 44.608 42.368 44.428C42.204 43.868 42.02 43.32 41.82 42.808C41.748 42.604 41.668 42.408 41.584 42.216C41.464 41.92 41.34 41.652 41.228 41.4C41.168 41.284 41.12 41.18 41.072 41.072C41.016 40.952 40.96 40.832 40.9 40.716C40.86 40.628 40.812 40.544 40.78 40.464L40.428 39.816C40.38 39.728 40.46 39.62 40.556 39.648L42.756 40.244H42.764C42.768 40.244 42.768 40.244 42.772 40.244L43.06 40.328L43.38 40.416L43.496 40.448V39.144C43.496 38.512 44 38 44.628 38C44.94 38 45.224 38.128 45.424 38.336C45.628 38.544 45.756 38.828 45.756 39.144V41.084L45.992 41.148C46.008 41.156 46.028 41.164 46.044 41.176C46.1 41.216 46.184 41.28 46.288 41.36C46.372 41.424 46.46 41.504 46.564 41.588C46.776 41.76 47.032 41.98 47.308 42.232C47.38 42.296 47.452 42.36 47.52 42.428C47.876 42.76 48.276 43.148 48.66 43.58C48.768 43.704 48.872 43.824 48.98 43.956C49.084 44.088 49.2 44.216 49.296 44.344C49.428 44.516 49.564 44.696 49.688 44.884C49.744 44.972 49.812 45.064 49.864 45.152C50.024 45.388 50.16 45.632 50.292 45.876C50.348 45.988 50.404 46.112 50.452 46.232C50.6 46.56 50.716 46.892 50.788 47.228C50.812 47.3 50.828 47.376 50.836 47.448V47.464C50.86 47.56 50.868 47.664 50.876 47.772C50.908 48.112 50.892 48.456 50.82 48.8C50.788 48.944 50.748 49.08 50.7 49.228C50.648 49.368 50.6 49.512 50.536 49.652C50.412 49.936 50.268 50.224 50.096 50.488C50.04 50.588 49.972 50.692 49.908 50.792C49.836 50.896 49.76 50.996 49.696 51.092C49.604 51.216 49.508 51.344 49.408 51.46C49.32 51.58 49.232 51.7 49.132 51.808C48.996 51.972 48.864 52.124 48.724 52.272C48.644 52.368 48.556 52.468 48.464 52.556C48.376 52.656 48.284 52.744 48.204 52.824C48.064 52.964 47.952 53.068 47.856 53.16L47.628 53.364C47.596 53.396 47.552 53.412 47.508 53.412H45.756V55.656H47.96C48.452 55.656 48.92 55.484 49.3 55.16C49.428 55.048 49.992 54.56 50.66 53.824C50.684 53.796 50.712 53.78 50.744 53.772L56.828 52.012C56.944 51.98 57.056 52.064 57.056 52.184V53.472Z"
+                                        fill="white" />
+                                </g>
+                                <path class="path-white"
+                                    d="M113.584 45V32.4H119.146C120.01 32.4 120.742 32.526 121.342 32.778C121.942 33.018 122.392 33.372 122.692 33.84C123.004 34.296 123.16 34.848 123.16 35.496C123.16 36.216 122.98 36.822 122.62 37.314C122.272 37.806 121.762 38.136 121.09 38.304L121.054 37.962C121.618 38.082 122.104 38.292 122.512 38.592C122.932 38.892 123.256 39.264 123.484 39.708C123.712 40.14 123.826 40.632 123.826 41.184C123.826 41.82 123.718 42.378 123.502 42.858C123.286 43.326 122.974 43.722 122.566 44.046C122.158 44.37 121.678 44.61 121.126 44.766C120.586 44.922 119.986 45 119.326 45H113.584ZM116.464 42.444H119.218C119.554 42.444 119.836 42.39 120.064 42.282C120.304 42.174 120.49 42.018 120.622 41.814C120.754 41.598 120.82 41.34 120.82 41.04C120.82 40.764 120.748 40.53 120.604 40.338C120.472 40.146 120.28 40.002 120.028 39.906C119.776 39.798 119.476 39.744 119.128 39.744H116.464V42.444ZM116.464 37.458H118.714C119.026 37.458 119.29 37.41 119.506 37.314C119.734 37.206 119.902 37.062 120.01 36.882C120.13 36.69 120.19 36.462 120.19 36.198C120.19 35.814 120.058 35.514 119.794 35.298C119.53 35.07 119.134 34.956 118.606 34.956H116.464V37.458ZM131.515 45.108C130.471 45.108 129.541 44.898 128.725 44.478C127.909 44.046 127.267 43.458 126.799 42.714C126.343 41.97 126.115 41.118 126.115 40.158V32.4H129.211V39.996C129.211 40.452 129.313 40.866 129.517 41.238C129.721 41.598 129.997 41.886 130.345 42.102C130.693 42.306 131.083 42.408 131.515 42.408C131.971 42.408 132.373 42.306 132.721 42.102C133.081 41.886 133.369 41.598 133.585 41.238C133.801 40.866 133.909 40.452 133.909 39.996V32.4H136.897V40.158C136.897 41.118 136.663 41.97 136.195 42.714C135.739 43.458 135.103 44.046 134.287 44.478C133.471 44.898 132.547 45.108 131.515 45.108ZM143.051 45V38.718L143.177 39.6L138.083 32.4H141.557L145.445 37.98L143.861 37.926L147.371 32.4H150.737L145.859 39.798L146.129 38.574V45H143.051ZM157.969 45V32.4H160.705L167.311 41.4L166.717 41.31C166.657 40.914 166.609 40.536 166.573 40.176C166.537 39.816 166.501 39.462 166.465 39.114C166.441 38.766 166.417 38.412 166.393 38.052C166.381 37.692 166.369 37.302 166.357 36.882C166.357 36.462 166.357 36.006 166.357 35.514V32.4H169.327V45H166.555L159.661 35.712L160.579 35.838C160.639 36.414 160.687 36.906 160.723 37.314C160.771 37.71 160.807 38.064 160.831 38.376C160.867 38.688 160.891 38.97 160.903 39.222C160.915 39.474 160.921 39.726 160.921 39.978C160.933 40.218 160.939 40.488 160.939 40.788V45H157.969ZM178.23 45.18C177.27 45.18 176.394 45.018 175.602 44.694C174.81 44.37 174.12 43.914 173.532 43.326C172.944 42.738 172.488 42.048 172.164 41.256C171.84 40.464 171.678 39.594 171.678 38.646C171.678 37.698 171.84 36.828 172.164 36.036C172.488 35.244 172.944 34.554 173.532 33.966C174.12 33.378 174.81 32.922 175.602 32.598C176.394 32.274 177.264 32.112 178.212 32.112C179.16 32.112 180.03 32.274 180.822 32.598C181.614 32.922 182.304 33.378 182.892 33.966C183.48 34.554 183.93 35.244 184.242 36.036C184.566 36.828 184.728 37.698 184.728 38.646C184.728 39.582 184.566 40.452 184.242 41.256C183.93 42.048 183.48 42.738 182.892 43.326C182.304 43.914 181.614 44.37 180.822 44.694C180.03 45.018 179.166 45.18 178.23 45.18ZM178.212 42.3C178.704 42.3 179.154 42.21 179.562 42.03C179.982 41.85 180.342 41.598 180.642 41.274C180.954 40.938 181.194 40.548 181.362 40.104C181.53 39.66 181.614 39.174 181.614 38.646C181.614 38.118 181.53 37.632 181.362 37.188C181.194 36.744 180.954 36.36 180.642 36.036C180.342 35.7 179.982 35.442 179.562 35.262C179.154 35.082 178.704 34.992 178.212 34.992C177.72 34.992 177.264 35.082 176.844 35.262C176.436 35.442 176.076 35.7 175.764 36.036C175.452 36.36 175.212 36.744 175.044 37.188C174.888 37.632 174.81 38.118 174.81 38.646C174.81 39.174 174.888 39.666 175.044 40.122C175.212 40.566 175.452 40.95 175.764 41.274C176.076 41.598 176.436 41.85 176.844 42.03C177.264 42.21 177.72 42.3 178.212 42.3ZM189.276 45L185.496 32.4H188.61L190.5 39.024C190.584 39.324 190.656 39.63 190.716 39.942C190.788 40.242 190.842 40.53 190.878 40.806C190.926 41.082 190.962 41.34 190.986 41.58C191.01 41.808 191.034 42 191.058 42.156H190.662C190.734 41.712 190.794 41.316 190.842 40.968C190.902 40.62 190.968 40.296 191.04 39.996C191.112 39.684 191.202 39.36 191.31 39.024L193.182 34.038H195.63L197.466 39.024C197.61 39.42 197.73 39.792 197.826 40.14C197.922 40.488 197.994 40.824 198.042 41.148C198.102 41.46 198.15 41.772 198.186 42.084L197.826 42.138C197.85 41.922 197.868 41.724 197.88 41.544C197.892 41.352 197.904 41.172 197.916 41.004C197.94 40.824 197.964 40.638 197.988 40.446C198.012 40.254 198.048 40.044 198.096 39.816C198.144 39.576 198.21 39.306 198.294 39.006L200.166 32.4H203.208L199.428 45H197.088L194.1 37.746L194.442 37.782L191.688 45H189.276ZM209.048 45L214.034 32.4H216.626L221.576 45H218.48L216.104 38.61C216.008 38.358 215.912 38.088 215.816 37.8C215.72 37.512 215.624 37.218 215.528 36.918C215.432 36.606 215.336 36.306 215.24 36.018C215.156 35.718 215.084 35.442 215.024 35.19L215.564 35.172C215.492 35.472 215.408 35.766 215.312 36.054C215.228 36.342 215.138 36.63 215.042 36.918C214.958 37.194 214.862 37.476 214.754 37.764C214.646 38.04 214.544 38.328 214.448 38.628L212.072 45H209.048ZM211.424 42.588L212.378 40.284H218.174L219.11 42.588H211.424ZM224.988 45V35.1H221.244V32.4H231.882V35.1H228.048V45H224.988ZM119.326 68.18C118.366 68.18 117.49 68.018 116.698 67.694C115.906 67.37 115.216 66.914 114.628 66.326C114.04 65.738 113.584 65.048 113.26 64.256C112.936 63.464 112.774 62.594 112.774 61.646C112.774 60.698 112.936 59.828 113.26 59.036C113.584 58.244 114.04 57.554 114.628 56.966C115.216 56.378 115.906 55.922 116.698 55.598C117.49 55.274 118.36 55.112 119.308 55.112C120.256 55.112 121.126 55.274 121.918 55.598C122.71 55.922 123.4 56.378 123.988 56.966C124.576 57.554 125.026 58.244 125.338 59.036C125.662 59.828 125.824 60.698 125.824 61.646C125.824 62.582 125.662 63.452 125.338 64.256C125.026 65.048 124.576 65.738 123.988 66.326C123.4 66.914 122.71 67.37 121.918 67.694C121.126 68.018 120.262 68.18 119.326 68.18ZM119.308 65.3C119.8 65.3 120.25 65.21 120.658 65.03C121.078 64.85 121.438 64.598 121.738 64.274C122.05 63.938 122.29 63.548 122.458 63.104C122.626 62.66 122.71 62.174 122.71 61.646C122.71 61.118 122.626 60.632 122.458 60.188C122.29 59.744 122.05 59.36 121.738 59.036C121.438 58.7 121.078 58.442 120.658 58.262C120.25 58.082 119.8 57.992 119.308 57.992C118.816 57.992 118.36 58.082 117.94 58.262C117.532 58.442 117.172 58.7 116.86 59.036C116.548 59.36 116.308 59.744 116.14 60.188C115.984 60.632 115.906 61.118 115.906 61.646C115.906 62.174 115.984 62.666 116.14 63.122C116.308 63.566 116.548 63.95 116.86 64.274C117.172 64.598 117.532 64.85 117.94 65.03C118.36 65.21 118.816 65.3 119.308 65.3ZM128.191 68V55.4H133.627C134.419 55.4 135.121 55.58 135.733 55.94C136.357 56.3 136.849 56.792 137.209 57.416C137.581 58.04 137.767 58.742 137.767 59.522C137.767 60.338 137.581 61.07 137.209 61.718C136.849 62.354 136.357 62.858 135.733 63.23C135.121 63.602 134.419 63.788 133.627 63.788H131.251V68H128.191ZM131.197 61.106H133.195C133.459 61.106 133.699 61.04 133.915 60.908C134.131 60.776 134.305 60.596 134.437 60.368C134.569 60.14 134.635 59.876 134.635 59.576C134.635 59.264 134.569 59 134.437 58.784C134.305 58.568 134.131 58.4 133.915 58.28C133.699 58.16 133.459 58.1 133.195 58.1H131.197V61.106ZM140.109 68V55.4H148.893V58.01H143.079V65.39H149.073V68H140.109ZM141.549 62.834V60.35H148.083V62.834H141.549ZM151.711 68V55.4H154.447L161.053 64.4L160.459 64.31C160.399 63.914 160.351 63.536 160.315 63.176C160.279 62.816 160.243 62.462 160.207 62.114C160.183 61.766 160.159 61.412 160.135 61.052C160.123 60.692 160.111 60.302 160.099 59.882C160.099 59.462 160.099 59.006 160.099 58.514V55.4H163.069V68H160.297L153.403 58.712L154.321 58.838C154.381 59.414 154.429 59.906 154.465 60.314C154.513 60.71 154.549 61.064 154.573 61.376C154.609 61.688 154.633 61.97 154.645 62.222C154.657 62.474 154.663 62.726 154.663 62.978C154.675 63.218 154.681 63.488 154.681 63.788V68H151.711ZM170.406 68.18C169.578 68.18 168.828 68.084 168.156 67.892C167.496 67.688 166.908 67.4 166.392 67.028C165.876 66.644 165.414 66.194 165.006 65.678L166.86 63.572C167.46 64.376 168.06 64.916 168.66 65.192C169.272 65.468 169.902 65.606 170.55 65.606C170.874 65.606 171.168 65.564 171.432 65.48C171.696 65.396 171.9 65.276 172.044 65.12C172.188 64.952 172.26 64.748 172.26 64.508C172.26 64.328 172.212 64.166 172.116 64.022C172.032 63.878 171.912 63.752 171.756 63.644C171.6 63.536 171.414 63.44 171.198 63.356C170.982 63.26 170.754 63.182 170.514 63.122C170.274 63.05 170.028 62.99 169.776 62.942C169.08 62.786 168.474 62.594 167.958 62.366C167.442 62.138 167.01 61.862 166.662 61.538C166.326 61.202 166.074 60.824 165.906 60.404C165.738 59.972 165.654 59.492 165.654 58.964C165.654 58.4 165.78 57.884 166.032 57.416C166.296 56.936 166.644 56.528 167.076 56.192C167.52 55.844 168.03 55.58 168.606 55.4C169.182 55.208 169.782 55.112 170.406 55.112C171.234 55.112 171.942 55.202 172.53 55.382C173.13 55.55 173.64 55.796 174.06 56.12C174.492 56.444 174.858 56.834 175.158 57.29L173.268 59.108C173.016 58.796 172.74 58.538 172.44 58.334C172.152 58.13 171.84 57.974 171.504 57.866C171.18 57.758 170.844 57.704 170.496 57.704C170.136 57.704 169.824 57.752 169.56 57.848C169.308 57.932 169.11 58.058 168.966 58.226C168.822 58.382 168.75 58.574 168.75 58.802C168.75 59.006 168.81 59.18 168.93 59.324C169.05 59.468 169.212 59.6 169.416 59.72C169.62 59.828 169.854 59.924 170.118 60.008C170.382 60.08 170.658 60.14 170.946 60.188C171.606 60.32 172.2 60.494 172.728 60.71C173.268 60.926 173.73 61.19 174.114 61.502C174.51 61.814 174.81 62.186 175.014 62.618C175.23 63.038 175.338 63.53 175.338 64.094C175.338 64.97 175.122 65.714 174.69 66.326C174.27 66.926 173.688 67.388 172.944 67.712C172.212 68.024 171.366 68.18 170.406 68.18ZM177.639 68V55.4H186.423V58.01H180.609V65.39H186.603V68H177.639ZM179.079 62.834V60.35H185.613V62.834H179.079ZM187.638 68L192.624 55.4H195.216L200.166 68H197.07L194.694 61.61C194.598 61.358 194.502 61.088 194.406 60.8C194.31 60.512 194.214 60.218 194.118 59.918C194.022 59.606 193.926 59.306 193.83 59.018C193.746 58.718 193.674 58.442 193.614 58.19L194.154 58.172C194.082 58.472 193.998 58.766 193.902 59.054C193.818 59.342 193.728 59.63 193.632 59.918C193.548 60.194 193.452 60.476 193.344 60.764C193.236 61.04 193.134 61.328 193.038 61.628L190.662 68H187.638ZM190.014 65.588L190.968 63.284H196.764L197.7 65.588H190.014Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_1_193" x="-4" y="-4" width="275" height="108"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_1_193" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_193"
+                                        result="shape" />
+                                </filter>
+                                <clipPath id="clip0_1_193">
+                                    <rect width="40" height="40" fill="white" transform="translate(24 30)" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between ">
+            <div class="overflow-hidden w-full">
+                <div class="flex animate-slide lg:gap-4 gap-2 ">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="overflow-hidden w-full mt-[24px] mb-[24px]">
+                <div class="flex lg:gap-4 gap-2  animate-slideRTL">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt=""
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center mx-auto gap-24 ">
+            <div class="overflow-hidden slide-scroll  w-full ">
+                <div class="flex lg:gap-4 gap-2  animate-slide">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img2.png" alt="gallery-page-one"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img5.png" alt="gallery-page-two"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/swiper-img3.png" alt="gallery-page-three"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="./assets/image/webp/slider-img1.png" alt="gallery-page-four"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <img src="/assets/image/webp/swiper-img4.png" alt="gallery-page-five"
+                        class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- =================video section----================= -->
+    <section class="flex min-h-screen relative justify-center items-center">
+        <div class="container max-w-[1140px] flex items-center justify-center flex-col lg:px-0 sm:px-3 px-5 ">
+            <img src="./assets/image/webp/play-img.png" alt="play text">
+            <p class="text-2xl mt-[100px] mb-6">Mixed reality NFTs project</p>
+            <p class="text-sm max-w-[752px] text-center mx-auto font-light leading-[150%] tracking-[2%] mb-12">Lorem
+                Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+            <div><img class="w-full sm:max-w-[400px] max-w-[200px]" src="./assets/image/svg/blue-btn.svg"
+                    alt="blue btn"></div>
+            <div class="max-w-[1140px] bg-black">
+                <div class="flex flex-wrap justify-end">
+                    <div class="w-4/12 flex flex-col justify-center">
+                        <p class="text-white lg:text-[40px] md:text-3xl sm:text-2xl text-sm hyper tracking-[4%] ">THIS
+                            IS VIDEO
+                            SAMPLE COVER</p>
+                        <p class="text-white md:text-lg sm:text-base text-xs font-light mt-6">Video is 16:9 aspect ratio
+                            (widescreen)</p>
+                    </div>
+                    <div class="w-7/12">
+                        <img src="./assets/image/webp/squad-video-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==============Road map section-================== -->
+    <section
+        class="flex lg:pt-[100px] lg:pb-[100px] pt-10 pb-10 flex-col min-h-screen bg-[url('./assets/image/webp/faq-bg-img.png')] relative justify-center items-center">
+        <img class="max-w-[784px] mx-auto w-full  lg:mb-[100px] sm:mb-16 mb-[50px]" src="./assets/image/webp/roadmap-img.png" alt="roadmap">
+        <div class="container max-lg:px-3">
+            <h2 class="text-white text-center lg:text-2xl sm:text-xl text-base max-sm:px-16">There’s more than one star in the galaxy</h2>
+            <div class="overflow-hidden max-w-[700px] w-full mx-auto">
+                <img class="max-w-[700px] mx-auto w-full animate-spin" src="./assets/image/webp/galaxy-img.png"
+                    alt="galaxy">
+            </div>
+        </div>
+        <div class="w-full px-4">
+            <div class="max-w-[946px] mx-auto">
+                <div class="flex flex-col">
+                    <div class="w-full flex max-md:justify-center">
+                        <ul
+                            class="details md:max-w-sm p-5 pb-2.5 bg-transparentrounded-md roadmap-card transition-all duration-300 cursor-pointer">
+                            <li class="text-[13px] mb-[26px] text-white flex justify-between"><span>PHASE 1</span><span
+                                    class=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9.5" stroke="#F4F4F4" />
+                                        <circle class="circle hidden" cx="10" cy="10" r="5" fill="white" />
+                                    </svg>
+                                </span></li>
+                            <li class="mt-6 mb-6 hyper text-[32px] text-white">Q2 2022</li>
+                            <li class="text-white text-sm font-light max-w-[344px]">Feni, BangladeshLorem Ipsum is
+                                simply dummy text
+                                of
+                                the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                since.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:justify-end flex justify-center">
+                        <ul
+                            class="details md:max-w-sm p-5 pb-2.5 bg-transparentrounded-md roadmap-card transition-all duration-300 cursor-pointer">
+                            <li class="text-[13px] mb-[26px] text-white flex justify-between"><span>PHASE 2</span><span
+                                    class=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9.5" stroke="#F4F4F4" />
+                                        <circle class="circle hidden" cx="10" cy="10" r="5" fill="white" />
+                                    </svg>
+                                </span></li>
+                            <li class="mt-6 mb-6 hyper text-[32px] text-white">Q3 2022</li>
+                            <li class="text-white text-sm font-light max-w-[344px]">Lorem Ipsum is simply dummy text of
+                                the printing
+                                and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book. It has survived not only five centuries.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full flex max-md:justify-center">
+                        <ul
+                            class="details md:max-w-sm p-5 pb-2.5 bg-transparentrounded-md roadmap-card transition-all duration-300 cursor-pointer">
+                            <li class="text-[13px] mb-[26px] text-white flex justify-between"><span>PHASE 3</span><span
+                                    class=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9.5" stroke="#F4F4F4" />
+                                        <circle class="circle hidden" cx="10" cy="10" r="5" fill="white" />
+                                    </svg>
+                                </span></li>
+                            <li class="mt-6 mb-6 hyper text-[32px] text-white">Q4 2022</li>
+                            <li class="text-white text-sm font-light max-w-[344px]">Lorem Ipsum is simply dummy text of
+                                the printing
+                                and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book. It has survived not only five centuries.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:justify-end flex justify-center">
+                        <ul
+                            class="details md:max-w-sm p-5 pb-2.5 bg-transparentrounded-md roadmap-card transition-all duration-300 cursor-pointer">
+                            <li class="text-[13px] mb-[26px] text-white flex justify-between"><span>PHASE 4</span><span
+                                    class=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9.5" stroke="#F4F4F4" />
+                                        <circle class="circle hidden" cx="10" cy="10" r="5" fill="white" />
+                                    </svg>
+                                </span></li>
+                            <li class="mt-6 mb-6 hyper text-[32px] text-white">Q1 / Q2 2023</li>
+                            <li class="text-white text-sm font-light max-w-[344px]">Lorem Ipsum is simply dummy text of
+                                the printing
+                                and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                since.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- =================team-slider======================= -->
+    <section class="text-white py-16 bg-[url('./assets/image/webp/faq-bg-img.png')]">
+        <div class="container mx-auto px-4 ">
+            <img class="mx-auto lg:mb-[100px] sm:mb-16 mb-[50px] max-sm:max-w-[233px]" src="/assets/image/webp/team-logo.png" alt="">
+            <p class="text-center lg:mb-[100px] sm:mb-16 mb-[50px] text-white font-light lg:text-2xl sm:text-xl text-base leading-[30px] ">
+                See who's behind this cool project
+            </p>
+            <div class="flex lg:mb-[100px] md:mb-16 mb-[50px] max-lg:hidden">
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-1-img.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.216 27.088L23.928 24.784H32.376L31.832 27.856H28.76L29.032 26.32H25.192L24.288 27.088L23.344 32.464H31.024L30.752 34H20ZM39.6053 32.464L40.5093 31.696L41.4533 26.32H37.6133L36.7093 27.088L35.7653 32.464H39.6053ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L43.5813 31.696L40.8693 34H32.4213ZM45.6585 29.392L45.9305 27.856H52.0745L51.8025 29.392H45.6585ZM52.6544 34L53.8704 27.088L56.5824 24.784H65.0304L64.4864 27.856H61.4144L61.6864 26.32H57.8464L56.9424 27.088L56.5424 29.392H64.2224L63.9504 30.928H56.2704L55.7264 34H52.6544ZM72.2596 32.464L73.1636 31.696L74.1076 26.32H70.2676L69.3636 27.088L68.4196 32.464H72.2596ZM65.0756 34L66.2916 27.088L69.0036 24.784H77.4516L76.2356 31.696L73.5236 34H65.0756ZM79.8009 34L77.9049 31.696L79.1209 24.784H82.1929L80.9769 31.696L81.6089 32.464H85.4489L86.8009 24.784H89.8729L88.2489 34H79.8009ZM89.9181 34L91.5421 24.784H99.9901L101.886 27.088L100.67 34H97.5981L98.8141 27.088L98.1821 26.32H94.3421L92.9901 34H89.9181ZM109.523 32.464L110.427 31.696L111.371 26.32H106.763L105.683 32.464H109.523ZM102.339 34L103.963 24.784H114.715L113.499 31.696L110.787 34H102.339ZM114.761 34L115.977 27.088L118.689 24.784H127.137L126.593 27.856H123.521L123.793 26.32H119.953L119.049 27.088L118.649 29.392H126.329L126.057 30.928H118.377L118.105 32.464H125.785L125.513 34H114.761ZM127.182 34L128.398 27.088L131.11 24.784H139.558L138.878 28.624L136.174 30.928H136.942L137.438 32.464H138.206L137.934 34H134.862L133.87 30.928H132.334L132.606 29.392H134.91L135.806 28.624L136.214 26.32H132.374L131.47 27.088L130.254 34H127.182ZM146.184 29.392L146.456 27.856H152.6L152.328 29.392H146.184ZM158.945 34L160.161 27.088L162.873 24.784H171.321L170.777 27.856H167.705L167.977 26.32H164.137L163.233 27.088L162.289 32.464H169.969L169.697 34H158.945ZM171.366 34L172.582 27.088L175.294 24.784H183.742L183.198 27.856H180.126L180.398 26.32H176.558L175.654 27.088L175.254 29.392H182.934L182.662 30.928H174.982L174.71 32.464H182.39L182.118 34H171.366ZM190.972 32.464L191.876 31.696L192.82 26.32H188.98L188.076 27.088L187.132 32.464H190.972ZM183.788 34L185.004 27.088L187.716 24.784H196.164L194.948 31.696L192.236 34H183.788Z"
+                                fill="#222222" />
+                        </svg>
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Marco Stein</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-2.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.216 27.088L23.928 24.784H32.376L31.832 27.856H28.76L29.032 26.32H25.192L24.288 27.088L23.344 32.464H31.024L30.752 34H20ZM39.6053 32.464L40.5093 31.696L41.4533 26.32H37.6133L36.7093 27.088L35.7653 32.464H39.6053ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L43.5813 31.696L40.8693 34H32.4213ZM45.6585 29.392L45.9305 27.856H52.0745L51.8025 29.392H45.6585ZM52.6544 34L53.8704 27.088L56.5824 24.784H65.0304L64.4864 27.856H61.4144L61.6864 26.32H57.8464L56.9424 27.088L56.5424 29.392H64.2224L63.9504 30.928H56.2704L55.7264 34H52.6544ZM72.2596 32.464L73.1636 31.696L74.1076 26.32H70.2676L69.3636 27.088L68.4196 32.464H72.2596ZM65.0756 34L66.2916 27.088L69.0036 24.784H77.4516L76.2356 31.696L73.5236 34H65.0756ZM79.8009 34L77.9049 31.696L79.1209 24.784H82.1929L80.9769 31.696L81.6089 32.464H85.4489L86.8009 24.784H89.8729L88.2489 34H79.8009ZM89.9181 34L91.5421 24.784H99.9901L101.886 27.088L100.67 34H97.5981L98.8141 27.088L98.1821 26.32H94.3421L92.9901 34H89.9181ZM109.523 32.464L110.427 31.696L111.371 26.32H106.763L105.683 32.464H109.523ZM102.339 34L103.963 24.784H114.715L113.499 31.696L110.787 34H102.339ZM114.761 34L115.977 27.088L118.689 24.784H127.137L126.593 27.856H123.521L123.793 26.32H119.953L119.049 27.088L118.649 29.392H126.329L126.057 30.928H118.377L118.105 32.464H125.785L125.513 34H114.761ZM127.182 34L128.398 27.088L131.11 24.784H139.558L138.878 28.624L136.174 30.928H136.942L137.438 32.464H138.206L137.934 34H134.862L133.87 30.928H132.334L132.606 29.392H134.91L135.806 28.624L136.214 26.32H132.374L131.47 27.088L130.254 34H127.182ZM146.184 29.392L146.456 27.856H152.6L152.328 29.392H146.184ZM158.945 34L160.161 27.088L162.873 24.784H171.321L170.777 27.856H167.705L167.977 26.32H164.137L163.233 27.088L162.289 32.464H169.969L169.697 34H158.945ZM175.206 34L176.558 26.32H172.718L172.99 24.784H183.742L183.47 26.32H179.63L178.278 34H175.206ZM190.972 32.464L191.876 31.696L192.82 26.32H188.98L188.076 27.088L187.132 32.464H190.972ZM183.788 34L185.004 27.088L187.716 24.784H196.164L194.948 31.696L192.236 34H183.788Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Imogen Mckinney</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-3.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M28.496 29.392L29.032 26.32H25.192L24.288 27.088L23.888 29.392H28.496ZM20 34L21.216 27.088L23.928 24.784H32.376L30.752 34H27.68L28.224 30.928H23.616L23.072 34H20ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L44.1173 28.624L41.4133 30.928H42.1813L42.6773 32.464H43.4453L43.1733 34H40.1013L39.1093 30.928H37.5733L37.8453 29.392H40.1493L41.0453 28.624L41.4533 26.32H37.6133L36.7093 27.088L35.4933 34H32.4213ZM48.6825 34L50.0345 26.32H46.1945L46.4665 24.784H57.2185L56.9465 26.32H53.1065L51.7545 34H48.6825ZM70.2128 32.464L71.1168 31.696L72.0608 26.32H67.4528L66.3728 32.464H70.2128ZM63.0288 34L64.6528 24.784H75.4048L74.1888 31.696L71.4768 34H63.0288ZM75.45 34L77.074 24.784H80.146L78.522 34H75.45ZM80.1838 34L81.3998 27.088L84.1118 24.784H92.5598L91.8798 28.624L89.1758 30.928H89.9438L90.4398 32.464H91.2078L90.9358 34H87.8638L86.8718 30.928H85.3358L85.6078 29.392H87.9118L88.8078 28.624L89.2158 26.32H85.3758L84.4718 27.088L83.2558 34H80.1838ZM92.605 34L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.901 30.928H96.221L95.949 32.464H103.629L103.357 34H92.605ZM105.026 34L106.242 27.088L108.954 24.784H117.402L116.858 27.856H113.786L114.058 26.32H110.218L109.314 27.088L108.37 32.464H116.05L115.778 34H105.026ZM121.288 34L122.64 26.32H118.8L119.072 24.784H129.824L129.552 26.32H125.712L124.36 34H121.288ZM137.053 32.464L137.957 31.696L138.901 26.32H135.061L134.157 27.088L133.213 32.464H137.053ZM129.869 34L131.085 27.088L133.797 24.784H142.245L141.029 31.696L138.317 34H129.869ZM142.29 34L143.506 27.088L146.218 24.784H154.666L153.986 28.624L151.282 30.928H152.05L152.546 32.464H153.314L153.042 34H149.97L148.978 30.928H147.442L147.714 29.392H150.018L150.914 28.624L151.322 26.32H147.482L146.578 27.088L145.362 34H142.29Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.1955 6.07039L16.8361 8.42195C16.3674 13.8829 11.758 18.1251 6.25021 18.1251C5.1174 18.1251 4.1799 17.9454 3.46896 17.5938C2.89865 17.3048 2.66427 17.0001 2.60177 16.9063C2.55006 16.8278 2.51674 16.7386 2.50429 16.6454C2.49184 16.5522 2.50058 16.4573 2.52987 16.368C2.55916 16.2786 2.60823 16.197 2.67343 16.1293C2.73864 16.0615 2.81829 16.0093 2.90646 15.9766C2.92208 15.9688 4.76583 15.2657 5.96115 13.9141C5.21985 13.3863 4.5683 12.7427 4.03146 12.0079C2.96115 10.5548 1.82833 8.03132 2.50802 4.2657C2.52939 4.15375 2.58059 4.04965 2.65622 3.96439C2.73185 3.87913 2.82911 3.81589 2.93771 3.78132C3.04666 3.74565 3.16332 3.74063 3.27493 3.76681C3.38654 3.79299 3.4888 3.84936 3.57052 3.92976C3.59396 3.96101 6.19552 6.52351 9.37521 7.35164V6.87507C9.37828 6.37954 9.47892 5.88945 9.67139 5.43281C9.86387 4.97617 10.1444 4.56191 10.497 4.21369C10.8495 3.86547 11.2673 3.59011 11.7263 3.40332C12.1853 3.21653 12.6765 3.12199 13.1721 3.12507C13.8225 3.13435 14.4594 3.31193 15.0207 3.64053C15.582 3.96912 16.0487 4.43751 16.3752 5.00007H18.7502C18.8736 4.99969 18.9943 5.03583 19.0972 5.10396C19.2001 5.17208 19.2805 5.26913 19.3283 5.38289C19.3734 5.49833 19.3848 5.62416 19.3613 5.74583C19.3378 5.86749 19.2803 5.98002 19.1955 6.07039Z"
+                                    fill="#F4F4F4" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Rai Lyons
+                    </p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-4.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.216 27.088L23.928 24.784H32.376L31.696 28.624L28.992 30.928H25.152L25.424 29.392H27.728L28.624 28.624L29.032 26.32H25.192L24.288 27.088L23.072 34H20ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L44.1173 28.624L41.4133 30.928H42.1813L42.6773 32.464H43.4453L43.1733 34H40.1013L39.1093 30.928H37.5733L37.8453 29.392H40.1493L41.0453 28.624L41.4533 26.32H37.6133L36.7093 27.088L35.4933 34H32.4213ZM52.0265 32.464L52.9305 31.696L53.8745 26.32H50.0345L49.1305 27.088L48.1865 32.464H52.0265ZM44.8425 34L46.0585 27.088L48.7705 24.784H57.2185L56.0025 31.696L53.2905 34H44.8425ZM57.2637 34L58.4797 27.088L61.1917 24.784H69.6397L69.0957 27.856H66.0237L66.2957 26.32H62.4557L61.5517 27.088L60.6077 32.464H65.2157L65.4877 30.928H62.4157L62.6877 29.392H68.8317L68.0157 34H57.2637ZM69.685 34L70.901 27.088L73.613 24.784H82.061L81.381 28.624L78.677 30.928H79.445L79.941 32.464H80.709L80.437 34H77.365L76.373 30.928H74.837L75.109 29.392H77.413L78.309 28.624L78.717 26.32H74.877L73.973 27.088L72.757 34H69.685ZM90.6023 29.392L91.1383 26.32H87.2983L86.3943 27.088L85.9943 29.392H90.6023ZM82.1063 34L83.3223 27.088L86.0343 24.784H94.4823L92.8583 34H89.7863L90.3303 30.928H85.7223L85.1783 34H82.1063ZM94.5275 34L96.1515 24.784H109.207L111.103 27.088L109.887 34H106.815L108.031 27.088L107.399 26.32H105.095L103.743 34H100.671L102.023 26.32H98.9515L97.5995 34H94.5275ZM111.558 34L113.182 24.784H126.238L128.134 27.088L126.918 34H123.846L125.062 27.088L124.43 26.32H122.126L120.774 34H117.702L119.054 26.32H115.982L114.63 34H111.558ZM128.589 34L129.805 27.088L132.517 24.784H140.965L140.421 27.856H137.349L137.621 26.32H133.781L132.877 27.088L132.477 29.392H140.157L139.885 30.928H132.205L131.933 32.464H139.613L139.341 34H128.589ZM141.01 34L142.226 27.088L144.938 24.784H153.386L152.706 28.624L150.002 30.928H150.77L151.266 32.464H152.034L151.762 34H148.69L147.698 30.928H146.162L146.434 29.392H148.738L149.634 28.624L150.042 26.32H146.202L145.298 27.088L144.082 34H141.01Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Kaiya Dunlap</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 lg:hidden max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-5.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L20.544 30.928H23.616L23.344 32.464H27.184L28.088 31.696L28.36 30.16L27.728 29.392H20.816L21.08 27.856H27.992L28.896 27.088L29.032 26.32H21.352L21.624 24.784H32.376L31.968 27.088L30.16 28.624L31.432 30.16L31.16 31.696L28.448 34H20ZM39.6053 32.464L40.5093 31.696L41.4533 26.32H36.8453L35.7653 32.464H39.6053ZM32.4213 34L34.0453 24.784H44.7973L43.5813 31.696L40.8693 34H32.4213ZM59.1035 29.392L59.6395 26.32H55.7995L54.8955 27.088L54.4955 29.392H59.1035ZM50.6075 34L51.8235 27.088L54.5355 24.784H62.9835L61.3595 34H58.2875L58.8315 30.928H54.2235L53.6795 34H50.6075ZM63.0288 34L64.2448 27.088L66.9568 24.784H75.4048L74.7248 28.624L72.0208 30.928H72.7888L73.2848 32.464H74.0528L73.7808 34H70.7088L69.7168 30.928H68.1808L68.4528 29.392H70.7568L71.6528 28.624L72.0608 26.32H68.2208L67.3168 27.088L66.1008 34H63.0288ZM79.29 34L80.642 26.32H76.802L77.074 24.784H87.826L87.554 26.32H83.714L82.362 34H79.29ZM87.8712 34L89.4952 24.784H92.5672L90.9432 34H87.8712ZM92.605 34L92.877 32.464H99.789L100.693 31.696L100.829 30.928H93.149L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.765 31.696L101.053 34H92.605ZM108.866 34L110.218 26.32H106.378L106.65 24.784H117.402L117.13 26.32H113.29L111.938 34H108.866Z"
+                                fill="#222222" />
+                        </svg>
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2 max-lg:text-center">Ryo Navarro</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center max-lg:mx-auto">
+                        Lorem
+                        ipsum is simply dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 lg:hidden max-lg:mb-5  flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-6.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.624 24.784H24.696L23.072 34H20ZM24.7337 34L26.3577 24.784H29.4297L28.0777 32.464H35.7578L35.4858 34H24.7337ZM37.155 34L38.779 24.784H41.851L40.499 32.464H48.179L47.907 34H37.155ZM51.8803 34L49.9843 31.696L51.2003 24.784H54.2723L53.0563 31.696L53.6883 32.464H57.5283L58.8803 24.784H61.9523L60.3283 34H51.8803ZM61.9975 34L62.2695 32.464H69.1815L70.0855 31.696L70.2215 30.928H62.5415L63.2135 27.088L65.9255 24.784H74.3735L73.8295 27.856H70.7575L71.0295 26.32H67.1895L66.2855 27.088L65.8855 29.392H73.5655L73.1575 31.696L70.4455 34H61.9975ZM78.2588 34L79.6108 26.32H75.7708L76.0428 24.784H86.7948L86.5228 26.32H82.6828L81.3308 34H78.2588ZM86.84 34L88.056 27.088L90.768 24.784H99.216L98.536 28.624L95.832 30.928H96.6L97.096 32.464H97.864L97.592 34H94.52L93.528 30.928H91.992L92.264 29.392H94.568L95.464 28.624L95.872 26.32H92.032L91.128 27.088L89.912 34H86.84ZM107.757 29.392L108.293 26.32H104.453L103.549 27.088L103.149 29.392H107.757ZM99.2613 34L100.477 27.088L103.189 24.784H111.637L110.013 34H106.941L107.485 30.928H102.877L102.333 34H99.2613ZM115.523 34L116.875 26.32H113.035L113.307 24.784H124.059L123.787 26.32H119.947L118.595 34H115.523ZM131.288 32.464L132.192 31.696L133.136 26.32H129.296L128.392 27.088L127.448 32.464H131.288ZM124.104 34L125.32 27.088L128.032 24.784H136.48L135.264 31.696L132.552 34H124.104ZM136.525 34L137.741 27.088L140.453 24.784H148.901L148.221 28.624L145.517 30.928H146.285L146.781 32.464H147.549L147.277 34H144.205L143.213 30.928H141.677L141.949 29.392H144.253L145.149 28.624L145.557 26.32H141.717L140.813 27.088L139.597 34H136.525Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Imogen Mckinney</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 lg:hidden flex flex-col max-lg:items-center ">
+                    <img src="./assets/image/webp/team-member-7.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M28.496 29.392L29.032 26.32H25.192L24.288 27.088L23.888 29.392H28.496ZM20 34L21.216 27.088L23.928 24.784H32.376L30.752 34H27.68L28.224 30.928H23.616L23.072 34H20ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L44.1173 28.624L41.4133 30.928H42.1813L42.6773 32.464H43.4453L43.1733 34H40.1013L39.1093 30.928H37.5733L37.8453 29.392H40.1493L41.0453 28.624L41.4533 26.32H37.6133L36.7093 27.088L35.4933 34H32.4213ZM48.6825 34L50.0345 26.32H46.1945L46.4665 24.784H57.2185L56.9465 26.32H53.1065L51.7545 34H48.6825ZM70.2128 32.464L71.1168 31.696L72.0608 26.32H67.4528L66.3728 32.464H70.2128ZM63.0288 34L64.6528 24.784H75.4048L74.1888 31.696L71.4768 34H63.0288ZM75.45 34L77.074 24.784H80.146L78.522 34H75.45ZM80.1838 34L81.3998 27.088L84.1118 24.784H92.5598L91.8798 28.624L89.1758 30.928H89.9438L90.4398 32.464H91.2078L90.9358 34H87.8638L86.8718 30.928H85.3358L85.6078 29.392H87.9118L88.8078 28.624L89.2158 26.32H85.3758L84.4718 27.088L83.2558 34H80.1838ZM92.605 34L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.901 30.928H96.221L95.949 32.464H103.629L103.357 34H92.605ZM105.026 34L106.242 27.088L108.954 24.784H117.402L116.858 27.856H113.786L114.058 26.32H110.218L109.314 27.088L108.37 32.464H116.05L115.778 34H105.026ZM121.288 34L122.64 26.32H118.8L119.072 24.784H129.824L129.552 26.32H125.712L124.36 34H121.288ZM137.053 32.464L137.957 31.696L138.901 26.32H135.061L134.157 27.088L133.213 32.464H137.053ZM129.869 34L131.085 27.088L133.797 24.784H142.245L141.029 31.696L138.317 34H129.869ZM142.29 34L143.506 27.088L146.218 24.784H154.666L153.986 28.624L151.282 30.928H152.05L152.546 32.464H153.314L153.042 34H149.97L148.978 30.928H147.442L147.714 29.392H150.018L150.914 28.624L151.322 26.32H147.482L146.578 27.088L145.362 34H142.29Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.1955 6.07039L16.8361 8.42195C16.3674 13.8829 11.758 18.1251 6.25021 18.1251C5.1174 18.1251 4.1799 17.9454 3.46896 17.5938C2.89865 17.3048 2.66427 17.0001 2.60177 16.9063C2.55006 16.8278 2.51674 16.7386 2.50429 16.6454C2.49184 16.5522 2.50058 16.4573 2.52987 16.368C2.55916 16.2786 2.60823 16.197 2.67343 16.1293C2.73864 16.0615 2.81829 16.0093 2.90646 15.9766C2.92208 15.9688 4.76583 15.2657 5.96115 13.9141C5.21985 13.3863 4.5683 12.7427 4.03146 12.0079C2.96115 10.5548 1.82833 8.03132 2.50802 4.2657C2.52939 4.15375 2.58059 4.04965 2.65622 3.96439C2.73185 3.87913 2.82911 3.81589 2.93771 3.78132C3.04666 3.74565 3.16332 3.74063 3.27493 3.76681C3.38654 3.79299 3.4888 3.84936 3.57052 3.92976C3.59396 3.96101 6.19552 6.52351 9.37521 7.35164V6.87507C9.37828 6.37954 9.47892 5.88945 9.67139 5.43281C9.86387 4.97617 10.1444 4.56191 10.497 4.21369C10.8495 3.86547 11.2673 3.59011 11.7263 3.40332C12.1853 3.21653 12.6765 3.12199 13.1721 3.12507C13.8225 3.13435 14.4594 3.31193 15.0207 3.64053C15.582 3.96912 16.0487 4.43751 16.3752 5.00007H18.7502C18.8736 4.99969 18.9943 5.03583 19.0972 5.10396C19.2001 5.17208 19.2805 5.26913 19.3283 5.38289C19.3734 5.49833 19.3848 5.62416 19.3613 5.74583C19.3378 5.86749 19.2803 5.98002 19.1955 6.07039Z"
+                                    fill="#F4F4F4" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Rai Lyons
+                    </p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+            </div>
+
+            <div class="flex max-lg:hidden justify-center overflow-x-auto">
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-5.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L20.544 30.928H23.616L23.344 32.464H27.184L28.088 31.696L28.36 30.16L27.728 29.392H20.816L21.08 27.856H27.992L28.896 27.088L29.032 26.32H21.352L21.624 24.784H32.376L31.968 27.088L30.16 28.624L31.432 30.16L31.16 31.696L28.448 34H20ZM39.6053 32.464L40.5093 31.696L41.4533 26.32H36.8453L35.7653 32.464H39.6053ZM32.4213 34L34.0453 24.784H44.7973L43.5813 31.696L40.8693 34H32.4213ZM59.1035 29.392L59.6395 26.32H55.7995L54.8955 27.088L54.4955 29.392H59.1035ZM50.6075 34L51.8235 27.088L54.5355 24.784H62.9835L61.3595 34H58.2875L58.8315 30.928H54.2235L53.6795 34H50.6075ZM63.0288 34L64.2448 27.088L66.9568 24.784H75.4048L74.7248 28.624L72.0208 30.928H72.7888L73.2848 32.464H74.0528L73.7808 34H70.7088L69.7168 30.928H68.1808L68.4528 29.392H70.7568L71.6528 28.624L72.0608 26.32H68.2208L67.3168 27.088L66.1008 34H63.0288ZM79.29 34L80.642 26.32H76.802L77.074 24.784H87.826L87.554 26.32H83.714L82.362 34H79.29ZM87.8712 34L89.4952 24.784H92.5672L90.9432 34H87.8712ZM92.605 34L92.877 32.464H99.789L100.693 31.696L100.829 30.928H93.149L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.765 31.696L101.053 34H92.605ZM108.866 34L110.218 26.32H106.378L106.65 24.784H117.402L117.13 26.32H113.29L111.938 34H108.866Z"
+                                fill="#222222" />
+                        </svg>
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2 max-lg:text-center">Ryo Navarro</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center max-lg:mx-auto">Lorem
+                        ipsum is simply dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 max-lg:mb-5  flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-6.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.624 24.784H24.696L23.072 34H20ZM24.7337 34L26.3577 24.784H29.4297L28.0777 32.464H35.7578L35.4858 34H24.7337ZM37.155 34L38.779 24.784H41.851L40.499 32.464H48.179L47.907 34H37.155ZM51.8803 34L49.9843 31.696L51.2003 24.784H54.2723L53.0563 31.696L53.6883 32.464H57.5283L58.8803 24.784H61.9523L60.3283 34H51.8803ZM61.9975 34L62.2695 32.464H69.1815L70.0855 31.696L70.2215 30.928H62.5415L63.2135 27.088L65.9255 24.784H74.3735L73.8295 27.856H70.7575L71.0295 26.32H67.1895L66.2855 27.088L65.8855 29.392H73.5655L73.1575 31.696L70.4455 34H61.9975ZM78.2588 34L79.6108 26.32H75.7708L76.0428 24.784H86.7948L86.5228 26.32H82.6828L81.3308 34H78.2588ZM86.84 34L88.056 27.088L90.768 24.784H99.216L98.536 28.624L95.832 30.928H96.6L97.096 32.464H97.864L97.592 34H94.52L93.528 30.928H91.992L92.264 29.392H94.568L95.464 28.624L95.872 26.32H92.032L91.128 27.088L89.912 34H86.84ZM107.757 29.392L108.293 26.32H104.453L103.549 27.088L103.149 29.392H107.757ZM99.2613 34L100.477 27.088L103.189 24.784H111.637L110.013 34H106.941L107.485 30.928H102.877L102.333 34H99.2613ZM115.523 34L116.875 26.32H113.035L113.307 24.784H124.059L123.787 26.32H119.947L118.595 34H115.523ZM131.288 32.464L132.192 31.696L133.136 26.32H129.296L128.392 27.088L127.448 32.464H131.288ZM124.104 34L125.32 27.088L128.032 24.784H136.48L135.264 31.696L132.552 34H124.104ZM136.525 34L137.741 27.088L140.453 24.784H148.901L148.221 28.624L145.517 30.928H146.285L146.781 32.464H147.549L147.277 34H144.205L143.213 30.928H141.677L141.949 29.392H144.253L145.149 28.624L145.557 26.32H141.717L140.813 27.088L139.597 34H136.525Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Imogen Mckinney</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-7.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M28.496 29.392L29.032 26.32H25.192L24.288 27.088L23.888 29.392H28.496ZM20 34L21.216 27.088L23.928 24.784H32.376L30.752 34H27.68L28.224 30.928H23.616L23.072 34H20ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L44.1173 28.624L41.4133 30.928H42.1813L42.6773 32.464H43.4453L43.1733 34H40.1013L39.1093 30.928H37.5733L37.8453 29.392H40.1493L41.0453 28.624L41.4533 26.32H37.6133L36.7093 27.088L35.4933 34H32.4213ZM48.6825 34L50.0345 26.32H46.1945L46.4665 24.784H57.2185L56.9465 26.32H53.1065L51.7545 34H48.6825ZM70.2128 32.464L71.1168 31.696L72.0608 26.32H67.4528L66.3728 32.464H70.2128ZM63.0288 34L64.6528 24.784H75.4048L74.1888 31.696L71.4768 34H63.0288ZM75.45 34L77.074 24.784H80.146L78.522 34H75.45ZM80.1838 34L81.3998 27.088L84.1118 24.784H92.5598L91.8798 28.624L89.1758 30.928H89.9438L90.4398 32.464H91.2078L90.9358 34H87.8638L86.8718 30.928H85.3358L85.6078 29.392H87.9118L88.8078 28.624L89.2158 26.32H85.3758L84.4718 27.088L83.2558 34H80.1838ZM92.605 34L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.901 30.928H96.221L95.949 32.464H103.629L103.357 34H92.605ZM105.026 34L106.242 27.088L108.954 24.784H117.402L116.858 27.856H113.786L114.058 26.32H110.218L109.314 27.088L108.37 32.464H116.05L115.778 34H105.026ZM121.288 34L122.64 26.32H118.8L119.072 24.784H129.824L129.552 26.32H125.712L124.36 34H121.288ZM137.053 32.464L137.957 31.696L138.901 26.32H135.061L134.157 27.088L133.213 32.464H137.053ZM129.869 34L131.085 27.088L133.797 24.784H142.245L141.029 31.696L138.317 34H129.869ZM142.29 34L143.506 27.088L146.218 24.784H154.666L153.986 28.624L151.282 30.928H152.05L152.546 32.464H153.314L153.042 34H149.97L148.978 30.928H147.442L147.714 29.392H150.018L150.914 28.624L151.322 26.32H147.482L146.578 27.088L145.362 34H142.29Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.1955 6.07039L16.8361 8.42195C16.3674 13.8829 11.758 18.1251 6.25021 18.1251C5.1174 18.1251 4.1799 17.9454 3.46896 17.5938C2.89865 17.3048 2.66427 17.0001 2.60177 16.9063C2.55006 16.8278 2.51674 16.7386 2.50429 16.6454C2.49184 16.5522 2.50058 16.4573 2.52987 16.368C2.55916 16.2786 2.60823 16.197 2.67343 16.1293C2.73864 16.0615 2.81829 16.0093 2.90646 15.9766C2.92208 15.9688 4.76583 15.2657 5.96115 13.9141C5.21985 13.3863 4.5683 12.7427 4.03146 12.0079C2.96115 10.5548 1.82833 8.03132 2.50802 4.2657C2.52939 4.15375 2.58059 4.04965 2.65622 3.96439C2.73185 3.87913 2.82911 3.81589 2.93771 3.78132C3.04666 3.74565 3.16332 3.74063 3.27493 3.76681C3.38654 3.79299 3.4888 3.84936 3.57052 3.92976C3.59396 3.96101 6.19552 6.52351 9.37521 7.35164V6.87507C9.37828 6.37954 9.47892 5.88945 9.67139 5.43281C9.86387 4.97617 10.1444 4.56191 10.497 4.21369C10.8495 3.86547 11.2673 3.59011 11.7263 3.40332C12.1853 3.21653 12.6765 3.12199 13.1721 3.12507C13.8225 3.13435 14.4594 3.31193 15.0207 3.64053C15.582 3.96912 16.0487 4.43751 16.3752 5.00007H18.7502C18.8736 4.99969 18.9943 5.03583 19.0972 5.10396C19.2001 5.17208 19.2805 5.26913 19.3283 5.38289C19.3734 5.49833 19.3848 5.62416 19.3613 5.74583C19.3378 5.86749 19.2803 5.98002 19.1955 6.07039Z"
+                                    fill="#F4F4F4" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Rai Lyons
+                    </p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+            </div>
+            <div class="lg:!hidden items-center justify-center gap-6 slider overflow-hidden">
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-1-img.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.216 27.088L23.928 24.784H32.376L31.832 27.856H28.76L29.032 26.32H25.192L24.288 27.088L23.344 32.464H31.024L30.752 34H20ZM39.6053 32.464L40.5093 31.696L41.4533 26.32H37.6133L36.7093 27.088L35.7653 32.464H39.6053ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L43.5813 31.696L40.8693 34H32.4213ZM45.6585 29.392L45.9305 27.856H52.0745L51.8025 29.392H45.6585ZM52.6544 34L53.8704 27.088L56.5824 24.784H65.0304L64.4864 27.856H61.4144L61.6864 26.32H57.8464L56.9424 27.088L56.5424 29.392H64.2224L63.9504 30.928H56.2704L55.7264 34H52.6544ZM72.2596 32.464L73.1636 31.696L74.1076 26.32H70.2676L69.3636 27.088L68.4196 32.464H72.2596ZM65.0756 34L66.2916 27.088L69.0036 24.784H77.4516L76.2356 31.696L73.5236 34H65.0756ZM79.8009 34L77.9049 31.696L79.1209 24.784H82.1929L80.9769 31.696L81.6089 32.464H85.4489L86.8009 24.784H89.8729L88.2489 34H79.8009ZM89.9181 34L91.5421 24.784H99.9901L101.886 27.088L100.67 34H97.5981L98.8141 27.088L98.1821 26.32H94.3421L92.9901 34H89.9181ZM109.523 32.464L110.427 31.696L111.371 26.32H106.763L105.683 32.464H109.523ZM102.339 34L103.963 24.784H114.715L113.499 31.696L110.787 34H102.339ZM114.761 34L115.977 27.088L118.689 24.784H127.137L126.593 27.856H123.521L123.793 26.32H119.953L119.049 27.088L118.649 29.392H126.329L126.057 30.928H118.377L118.105 32.464H125.785L125.513 34H114.761ZM127.182 34L128.398 27.088L131.11 24.784H139.558L138.878 28.624L136.174 30.928H136.942L137.438 32.464H138.206L137.934 34H134.862L133.87 30.928H132.334L132.606 29.392H134.91L135.806 28.624L136.214 26.32H132.374L131.47 27.088L130.254 34H127.182ZM146.184 29.392L146.456 27.856H152.6L152.328 29.392H146.184ZM158.945 34L160.161 27.088L162.873 24.784H171.321L170.777 27.856H167.705L167.977 26.32H164.137L163.233 27.088L162.289 32.464H169.969L169.697 34H158.945ZM171.366 34L172.582 27.088L175.294 24.784H183.742L183.198 27.856H180.126L180.398 26.32H176.558L175.654 27.088L175.254 29.392H182.934L182.662 30.928H174.982L174.71 32.464H182.39L182.118 34H171.366ZM190.972 32.464L191.876 31.696L192.82 26.32H188.98L188.076 27.088L187.132 32.464H190.972ZM183.788 34L185.004 27.088L187.716 24.784H196.164L194.948 31.696L192.236 34H183.788Z"
+                                fill="#222222" />
+                        </svg>
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Marco Stein</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-2.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.216 27.088L23.928 24.784H32.376L31.832 27.856H28.76L29.032 26.32H25.192L24.288 27.088L23.344 32.464H31.024L30.752 34H20ZM39.6053 32.464L40.5093 31.696L41.4533 26.32H37.6133L36.7093 27.088L35.7653 32.464H39.6053ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L43.5813 31.696L40.8693 34H32.4213ZM45.6585 29.392L45.9305 27.856H52.0745L51.8025 29.392H45.6585ZM52.6544 34L53.8704 27.088L56.5824 24.784H65.0304L64.4864 27.856H61.4144L61.6864 26.32H57.8464L56.9424 27.088L56.5424 29.392H64.2224L63.9504 30.928H56.2704L55.7264 34H52.6544ZM72.2596 32.464L73.1636 31.696L74.1076 26.32H70.2676L69.3636 27.088L68.4196 32.464H72.2596ZM65.0756 34L66.2916 27.088L69.0036 24.784H77.4516L76.2356 31.696L73.5236 34H65.0756ZM79.8009 34L77.9049 31.696L79.1209 24.784H82.1929L80.9769 31.696L81.6089 32.464H85.4489L86.8009 24.784H89.8729L88.2489 34H79.8009ZM89.9181 34L91.5421 24.784H99.9901L101.886 27.088L100.67 34H97.5981L98.8141 27.088L98.1821 26.32H94.3421L92.9901 34H89.9181ZM109.523 32.464L110.427 31.696L111.371 26.32H106.763L105.683 32.464H109.523ZM102.339 34L103.963 24.784H114.715L113.499 31.696L110.787 34H102.339ZM114.761 34L115.977 27.088L118.689 24.784H127.137L126.593 27.856H123.521L123.793 26.32H119.953L119.049 27.088L118.649 29.392H126.329L126.057 30.928H118.377L118.105 32.464H125.785L125.513 34H114.761ZM127.182 34L128.398 27.088L131.11 24.784H139.558L138.878 28.624L136.174 30.928H136.942L137.438 32.464H138.206L137.934 34H134.862L133.87 30.928H132.334L132.606 29.392H134.91L135.806 28.624L136.214 26.32H132.374L131.47 27.088L130.254 34H127.182ZM146.184 29.392L146.456 27.856H152.6L152.328 29.392H146.184ZM158.945 34L160.161 27.088L162.873 24.784H171.321L170.777 27.856H167.705L167.977 26.32H164.137L163.233 27.088L162.289 32.464H169.969L169.697 34H158.945ZM175.206 34L176.558 26.32H172.718L172.99 24.784H183.742L183.47 26.32H179.63L178.278 34H175.206ZM190.972 32.464L191.876 31.696L192.82 26.32H188.98L188.076 27.088L187.132 32.464H190.972ZM183.788 34L185.004 27.088L187.716 24.784H196.164L194.948 31.696L192.236 34H183.788Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Imogen Mckinney</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-3.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M28.496 29.392L29.032 26.32H25.192L24.288 27.088L23.888 29.392H28.496ZM20 34L21.216 27.088L23.928 24.784H32.376L30.752 34H27.68L28.224 30.928H23.616L23.072 34H20ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L44.1173 28.624L41.4133 30.928H42.1813L42.6773 32.464H43.4453L43.1733 34H40.1013L39.1093 30.928H37.5733L37.8453 29.392H40.1493L41.0453 28.624L41.4533 26.32H37.6133L36.7093 27.088L35.4933 34H32.4213ZM48.6825 34L50.0345 26.32H46.1945L46.4665 24.784H57.2185L56.9465 26.32H53.1065L51.7545 34H48.6825ZM70.2128 32.464L71.1168 31.696L72.0608 26.32H67.4528L66.3728 32.464H70.2128ZM63.0288 34L64.6528 24.784H75.4048L74.1888 31.696L71.4768 34H63.0288ZM75.45 34L77.074 24.784H80.146L78.522 34H75.45ZM80.1838 34L81.3998 27.088L84.1118 24.784H92.5598L91.8798 28.624L89.1758 30.928H89.9438L90.4398 32.464H91.2078L90.9358 34H87.8638L86.8718 30.928H85.3358L85.6078 29.392H87.9118L88.8078 28.624L89.2158 26.32H85.3758L84.4718 27.088L83.2558 34H80.1838ZM92.605 34L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.901 30.928H96.221L95.949 32.464H103.629L103.357 34H92.605ZM105.026 34L106.242 27.088L108.954 24.784H117.402L116.858 27.856H113.786L114.058 26.32H110.218L109.314 27.088L108.37 32.464H116.05L115.778 34H105.026ZM121.288 34L122.64 26.32H118.8L119.072 24.784H129.824L129.552 26.32H125.712L124.36 34H121.288ZM137.053 32.464L137.957 31.696L138.901 26.32H135.061L134.157 27.088L133.213 32.464H137.053ZM129.869 34L131.085 27.088L133.797 24.784H142.245L141.029 31.696L138.317 34H129.869ZM142.29 34L143.506 27.088L146.218 24.784H154.666L153.986 28.624L151.282 30.928H152.05L152.546 32.464H153.314L153.042 34H149.97L148.978 30.928H147.442L147.714 29.392H150.018L150.914 28.624L151.322 26.32H147.482L146.578 27.088L145.362 34H142.29Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.1955 6.07039L16.8361 8.42195C16.3674 13.8829 11.758 18.1251 6.25021 18.1251C5.1174 18.1251 4.1799 17.9454 3.46896 17.5938C2.89865 17.3048 2.66427 17.0001 2.60177 16.9063C2.55006 16.8278 2.51674 16.7386 2.50429 16.6454C2.49184 16.5522 2.50058 16.4573 2.52987 16.368C2.55916 16.2786 2.60823 16.197 2.67343 16.1293C2.73864 16.0615 2.81829 16.0093 2.90646 15.9766C2.92208 15.9688 4.76583 15.2657 5.96115 13.9141C5.21985 13.3863 4.5683 12.7427 4.03146 12.0079C2.96115 10.5548 1.82833 8.03132 2.50802 4.2657C2.52939 4.15375 2.58059 4.04965 2.65622 3.96439C2.73185 3.87913 2.82911 3.81589 2.93771 3.78132C3.04666 3.74565 3.16332 3.74063 3.27493 3.76681C3.38654 3.79299 3.4888 3.84936 3.57052 3.92976C3.59396 3.96101 6.19552 6.52351 9.37521 7.35164V6.87507C9.37828 6.37954 9.47892 5.88945 9.67139 5.43281C9.86387 4.97617 10.1444 4.56191 10.497 4.21369C10.8495 3.86547 11.2673 3.59011 11.7263 3.40332C12.1853 3.21653 12.6765 3.12199 13.1721 3.12507C13.8225 3.13435 14.4594 3.31193 15.0207 3.64053C15.582 3.96912 16.0487 4.43751 16.3752 5.00007H18.7502C18.8736 4.99969 18.9943 5.03583 19.0972 5.10396C19.2001 5.17208 19.2805 5.26913 19.3283 5.38289C19.3734 5.49833 19.3848 5.62416 19.3613 5.74583C19.3378 5.86749 19.2803 5.98002 19.1955 6.07039Z"
+                                    fill="#F4F4F4" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Rai Lyons
+                    </p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-4.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.216 27.088L23.928 24.784H32.376L31.696 28.624L28.992 30.928H25.152L25.424 29.392H27.728L28.624 28.624L29.032 26.32H25.192L24.288 27.088L23.072 34H20ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L44.1173 28.624L41.4133 30.928H42.1813L42.6773 32.464H43.4453L43.1733 34H40.1013L39.1093 30.928H37.5733L37.8453 29.392H40.1493L41.0453 28.624L41.4533 26.32H37.6133L36.7093 27.088L35.4933 34H32.4213ZM52.0265 32.464L52.9305 31.696L53.8745 26.32H50.0345L49.1305 27.088L48.1865 32.464H52.0265ZM44.8425 34L46.0585 27.088L48.7705 24.784H57.2185L56.0025 31.696L53.2905 34H44.8425ZM57.2637 34L58.4797 27.088L61.1917 24.784H69.6397L69.0957 27.856H66.0237L66.2957 26.32H62.4557L61.5517 27.088L60.6077 32.464H65.2157L65.4877 30.928H62.4157L62.6877 29.392H68.8317L68.0157 34H57.2637ZM69.685 34L70.901 27.088L73.613 24.784H82.061L81.381 28.624L78.677 30.928H79.445L79.941 32.464H80.709L80.437 34H77.365L76.373 30.928H74.837L75.109 29.392H77.413L78.309 28.624L78.717 26.32H74.877L73.973 27.088L72.757 34H69.685ZM90.6023 29.392L91.1383 26.32H87.2983L86.3943 27.088L85.9943 29.392H90.6023ZM82.1063 34L83.3223 27.088L86.0343 24.784H94.4823L92.8583 34H89.7863L90.3303 30.928H85.7223L85.1783 34H82.1063ZM94.5275 34L96.1515 24.784H109.207L111.103 27.088L109.887 34H106.815L108.031 27.088L107.399 26.32H105.095L103.743 34H100.671L102.023 26.32H98.9515L97.5995 34H94.5275ZM111.558 34L113.182 24.784H126.238L128.134 27.088L126.918 34H123.846L125.062 27.088L124.43 26.32H122.126L120.774 34H117.702L119.054 26.32H115.982L114.63 34H111.558ZM128.589 34L129.805 27.088L132.517 24.784H140.965L140.421 27.856H137.349L137.621 26.32H133.781L132.877 27.088L132.477 29.392H140.157L139.885 30.928H132.205L131.933 32.464H139.613L139.341 34H128.589ZM141.01 34L142.226 27.088L144.938 24.784H153.386L152.706 28.624L150.002 30.928H150.77L151.266 32.464H152.034L151.762 34H148.69L147.698 30.928H146.162L146.434 29.392H148.738L149.634 28.624L150.042 26.32H146.202L145.298 27.088L144.082 34H141.01Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Kaiya Dunlap</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 lg:hidden max-lg:mb-5 flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-5.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L20.544 30.928H23.616L23.344 32.464H27.184L28.088 31.696L28.36 30.16L27.728 29.392H20.816L21.08 27.856H27.992L28.896 27.088L29.032 26.32H21.352L21.624 24.784H32.376L31.968 27.088L30.16 28.624L31.432 30.16L31.16 31.696L28.448 34H20ZM39.6053 32.464L40.5093 31.696L41.4533 26.32H36.8453L35.7653 32.464H39.6053ZM32.4213 34L34.0453 24.784H44.7973L43.5813 31.696L40.8693 34H32.4213ZM59.1035 29.392L59.6395 26.32H55.7995L54.8955 27.088L54.4955 29.392H59.1035ZM50.6075 34L51.8235 27.088L54.5355 24.784H62.9835L61.3595 34H58.2875L58.8315 30.928H54.2235L53.6795 34H50.6075ZM63.0288 34L64.2448 27.088L66.9568 24.784H75.4048L74.7248 28.624L72.0208 30.928H72.7888L73.2848 32.464H74.0528L73.7808 34H70.7088L69.7168 30.928H68.1808L68.4528 29.392H70.7568L71.6528 28.624L72.0608 26.32H68.2208L67.3168 27.088L66.1008 34H63.0288ZM79.29 34L80.642 26.32H76.802L77.074 24.784H87.826L87.554 26.32H83.714L82.362 34H79.29ZM87.8712 34L89.4952 24.784H92.5672L90.9432 34H87.8712ZM92.605 34L92.877 32.464H99.789L100.693 31.696L100.829 30.928H93.149L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.765 31.696L101.053 34H92.605ZM108.866 34L110.218 26.32H106.378L106.65 24.784H117.402L117.13 26.32H113.29L111.938 34H108.866Z"
+                                fill="#222222" />
+                        </svg>
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2 max-lg:text-center">Ryo Navarro</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center max-lg:mx-auto">
+                        Lorem
+                        ipsum is simply dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 lg:hidden max-lg:mb-5  flex flex-col max-lg:items-center max-lg:justify-center">
+                    <img src="./assets/image/webp/team-member-6.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M20 34L21.624 24.784H24.696L23.072 34H20ZM24.7337 34L26.3577 24.784H29.4297L28.0777 32.464H35.7578L35.4858 34H24.7337ZM37.155 34L38.779 24.784H41.851L40.499 32.464H48.179L47.907 34H37.155ZM51.8803 34L49.9843 31.696L51.2003 24.784H54.2723L53.0563 31.696L53.6883 32.464H57.5283L58.8803 24.784H61.9523L60.3283 34H51.8803ZM61.9975 34L62.2695 32.464H69.1815L70.0855 31.696L70.2215 30.928H62.5415L63.2135 27.088L65.9255 24.784H74.3735L73.8295 27.856H70.7575L71.0295 26.32H67.1895L66.2855 27.088L65.8855 29.392H73.5655L73.1575 31.696L70.4455 34H61.9975ZM78.2588 34L79.6108 26.32H75.7708L76.0428 24.784H86.7948L86.5228 26.32H82.6828L81.3308 34H78.2588ZM86.84 34L88.056 27.088L90.768 24.784H99.216L98.536 28.624L95.832 30.928H96.6L97.096 32.464H97.864L97.592 34H94.52L93.528 30.928H91.992L92.264 29.392H94.568L95.464 28.624L95.872 26.32H92.032L91.128 27.088L89.912 34H86.84ZM107.757 29.392L108.293 26.32H104.453L103.549 27.088L103.149 29.392H107.757ZM99.2613 34L100.477 27.088L103.189 24.784H111.637L110.013 34H106.941L107.485 30.928H102.877L102.333 34H99.2613ZM115.523 34L116.875 26.32H113.035L113.307 24.784H124.059L123.787 26.32H119.947L118.595 34H115.523ZM131.288 32.464L132.192 31.696L133.136 26.32H129.296L128.392 27.088L127.448 32.464H131.288ZM124.104 34L125.32 27.088L128.032 24.784H136.48L135.264 31.696L132.552 34H124.104ZM136.525 34L137.741 27.088L140.453 24.784H148.901L148.221 28.624L145.517 30.928H146.285L146.781 32.464H147.549L147.277 34H144.205L143.213 30.928H141.677L141.949 29.392H144.253L145.149 28.624L145.557 26.32H141.717L140.813 27.088L139.597 34H136.525Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                                    fill="#F4F4F4" />
+                                <path
+                                    d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875V2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z"
+                                    fill="#F4F4F4" />
+                            </svg></a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Imogen Mckinney</p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+                <div class="px-3 lg:hidden flex flex-col max-lg:items-center ">
+                    <img src="./assets/image/webp/team-member-7.png" alt="team img">
+                    <div class="flex items-center mt-[-1px]">
+                        <svg class="co-founder-btn cursor-pointer" width="237" height="58" viewBox="0 0 237 58"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M10 58H227V39L237 29V0H0V48L10 58Z" fill="white" />
+                            <path class="path-black"
+                                d="M28.496 29.392L29.032 26.32H25.192L24.288 27.088L23.888 29.392H28.496ZM20 34L21.216 27.088L23.928 24.784H32.376L30.752 34H27.68L28.224 30.928H23.616L23.072 34H20ZM32.4213 34L33.6373 27.088L36.3493 24.784H44.7973L44.1173 28.624L41.4133 30.928H42.1813L42.6773 32.464H43.4453L43.1733 34H40.1013L39.1093 30.928H37.5733L37.8453 29.392H40.1493L41.0453 28.624L41.4533 26.32H37.6133L36.7093 27.088L35.4933 34H32.4213ZM48.6825 34L50.0345 26.32H46.1945L46.4665 24.784H57.2185L56.9465 26.32H53.1065L51.7545 34H48.6825ZM70.2128 32.464L71.1168 31.696L72.0608 26.32H67.4528L66.3728 32.464H70.2128ZM63.0288 34L64.6528 24.784H75.4048L74.1888 31.696L71.4768 34H63.0288ZM75.45 34L77.074 24.784H80.146L78.522 34H75.45ZM80.1838 34L81.3998 27.088L84.1118 24.784H92.5598L91.8798 28.624L89.1758 30.928H89.9438L90.4398 32.464H91.2078L90.9358 34H87.8638L86.8718 30.928H85.3358L85.6078 29.392H87.9118L88.8078 28.624L89.2158 26.32H85.3758L84.4718 27.088L83.2558 34H80.1838ZM92.605 34L93.821 27.088L96.533 24.784H104.981L104.437 27.856H101.365L101.637 26.32H97.797L96.893 27.088L96.493 29.392H104.173L103.901 30.928H96.221L95.949 32.464H103.629L103.357 34H92.605ZM105.026 34L106.242 27.088L108.954 24.784H117.402L116.858 27.856H113.786L114.058 26.32H110.218L109.314 27.088L108.37 32.464H116.05L115.778 34H105.026ZM121.288 34L122.64 26.32H118.8L119.072 24.784H129.824L129.552 26.32H125.712L124.36 34H121.288ZM137.053 32.464L137.957 31.696L138.901 26.32H135.061L134.157 27.088L133.213 32.464H137.053ZM129.869 34L131.085 27.088L133.797 24.784H142.245L141.029 31.696L138.317 34H129.869ZM142.29 34L143.506 27.088L146.218 24.784H154.666L153.986 28.624L151.282 30.928H152.05L152.546 32.464H153.314L153.042 34H149.97L148.978 30.928H147.442L147.714 29.392H150.018L150.914 28.624L151.322 26.32H147.482L146.578 27.088L145.362 34H142.29Z"
+                                fill="#222222" />
+                        </svg>
+
+                        <a href="/" class="ml-2.5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.1955 6.07039L16.8361 8.42195C16.3674 13.8829 11.758 18.1251 6.25021 18.1251C5.1174 18.1251 4.1799 17.9454 3.46896 17.5938C2.89865 17.3048 2.66427 17.0001 2.60177 16.9063C2.55006 16.8278 2.51674 16.7386 2.50429 16.6454C2.49184 16.5522 2.50058 16.4573 2.52987 16.368C2.55916 16.2786 2.60823 16.197 2.67343 16.1293C2.73864 16.0615 2.81829 16.0093 2.90646 15.9766C2.92208 15.9688 4.76583 15.2657 5.96115 13.9141C5.21985 13.3863 4.5683 12.7427 4.03146 12.0079C2.96115 10.5548 1.82833 8.03132 2.50802 4.2657C2.52939 4.15375 2.58059 4.04965 2.65622 3.96439C2.73185 3.87913 2.82911 3.81589 2.93771 3.78132C3.04666 3.74565 3.16332 3.74063 3.27493 3.76681C3.38654 3.79299 3.4888 3.84936 3.57052 3.92976C3.59396 3.96101 6.19552 6.52351 9.37521 7.35164V6.87507C9.37828 6.37954 9.47892 5.88945 9.67139 5.43281C9.86387 4.97617 10.1444 4.56191 10.497 4.21369C10.8495 3.86547 11.2673 3.59011 11.7263 3.40332C12.1853 3.21653 12.6765 3.12199 13.1721 3.12507C13.8225 3.13435 14.4594 3.31193 15.0207 3.64053C15.582 3.96912 16.0487 4.43751 16.3752 5.00007H18.7502C18.8736 4.99969 18.9943 5.03583 19.0972 5.10396C19.2001 5.17208 19.2805 5.26913 19.3283 5.38289C19.3734 5.49833 19.3848 5.62416 19.3613 5.74583C19.3378 5.86749 19.2803 5.98002 19.1955 6.07039Z"
+                                    fill="#F4F4F4" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-lg font-semibold mt-5 mb-2">Rai Lyons
+                    </p>
+                    <p class="text-xs font-light leading-[150%] max-w-[267px] max-lg:text-center">Lorem
+                        ipsum is simply
+                        dummy text of the printing
+                        and
+                        typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  --------========FAQ accordian section--============= -->
+    <section id="faq"
+        class="max-sm:min-h-[800px] bg-black-bg-2 bg-black bg-cover bg-no-repeat flex justify-center items-center relative -mt-1 lg:py-[100px] py-[50px]">
+        <div class="container mx-auto px-3 justify-center flex flex-col items-center relative">
+            <img class="absolute pointer-events-none lg:max-h-[908px] min-h-[900px] max-lg:hidden"
+                src="./assets/image/webp/accordian-corner-img.png" alt="accordion-around-img">
+            <div class="">
+                <img class="max-w-[319px] w-full lg:mb-[100px] sm:mb-16 mb-[50px] max-sm:max-w-[160px]" src="./assets/image/webp/fag-img.png " alt="fag-img">
+            </div>
+            <h4 class="tracking-[2%] mx-auto max-w-[314px]lg:mb-[100px] sm:mb-16  text-white font-light lg:text-2xl sm:text-xl text-base lg:mb-[100px] mb-[50px] text-center">
+                Frequently Asked Question</h4>
+            <div class="max-w-[752px] mx-auto">
+                <div class="lg:space-y-5 space-y-4">
+                    <!-- Accordion Item 1 -->
+                    <div>
+                        <input type="radio" name="accordion" id="item1" class="hidden peer" />
+                        <label for="item1"
+                            class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                            01 &nbsp; When is the mint date?
+                            <svg id="icon" width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" fill="white" />
+                            </svg>
+                        </label>
+                        <div
+                            class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries.
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div>
+                        <input type="radio" name="accordion" id="item2" class="hidden peer" checked />
+                        <label for="item2"
+                            class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                            02 &nbsp; How much will each nakashi pages cost?
+                            <svg id="icon" width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" fill="white" />
+                            </svg>
+                        </label>
+                        <div
+                            class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries.
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div>
+                        <input type="radio" name="accordion" id="item3" class="hidden peer" />
+                        <label for="item3"
+                            class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                            03 &nbsp; How can I use my NFTs?
+                            <svg id="icon" width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" fill="white" />
+                            </svg>
+                        </label>
+                        <div
+                            class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries.
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div>
+                        <input type="radio" name="accordion" id="item4" class="hidden peer" />
+                        <label for="item4"
+                            class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                            04 &nbsp; How to play with real Nakashi manga pages?
+                            <svg id="icon" width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" fill="white" />
+                            </svg>
+                        </label>
+                        <div
+                            class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries.
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 5 -->
+                    <div>
+                        <input type="radio" name="accordion" id="item5" class="hidden peer" />
+                        <label for="item5"
+                            class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                            05 &nbsp; How can I use my NFTs?
+                            <svg id="icon" width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" fill="white" />
+                            </svg>
+                        </label>
+                        <div
+                            class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries.
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================join us  section-============---==== -->
+    <section class="flex min-h-screen justify-center items-center"
+        style="background-image: url(./assets/image/webp/squad-bg-img.png);">
+        <div class="container max-w-[1440px]">
+            <div class="flex flex-wrap">
+                <div class="lg:w-8/12 w-full">
+                    <img src="./assets/image/webp/squad-img.png" alt="squad-img">
+                </div>
+                <div class="lg:w-4/12 w-full justify-center flex flex-col lg:items-start items-center">
+                    <p
+                        class="lg:text-[40px] sm:text-4xl text-[28px] lg:text-start text-center  text-white flex flex-col mb-6 lg:mt-0 mt-[50px]">
+                        <span class="hyper">JOIN NAKASHI</span><span class="hyper">COMMUNITY</span>
+                    </p>
+                    <p
+                        class="text-white sm:max-w-[330px] max-w-[265px] lg:text-start text-center text-base sm:text-lg font-light mb-10">
+                        Be part of our amazing community & stay tuned for the news.</p>
+                    <a href="/">
+                        <svg class="button-hover" width="280" height="64" viewBox="0 0 280 64" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_1_410)">
+                                <path class="path-white" d="M10 0H280V54L270 64H0V10L10 0Z" fill="#403CFF" />
+                                <line opacity="0.2" x1="72.5" y1="-2.18557e-08" x2="72.5" y2="64" stroke="white" />
+                                <g clip-path="url(#clip0_1_410)">
+                                    <path class="path-blue"
+                                        d="M44.317 24.492C42.787 23.802 41.147 23.292 39.432 23.002C39.4167 22.999 39.4009 23.0009 39.3868 23.0074C39.3726 23.0138 39.3608 23.0245 39.353 23.038C39.143 23.407 38.909 23.888 38.745 24.268C36.9261 23.9962 35.0769 23.9962 33.258 24.268C33.0753 23.8468 32.8693 23.4362 32.641 23.038C32.6333 23.0244 32.6215 23.0134 32.6074 23.0066C32.5933 22.9998 32.5775 22.9975 32.562 23C30.848 23.29 29.208 23.8 27.677 24.491C27.6638 24.4965 27.6527 24.5059 27.645 24.518C24.533 29.093 23.68 33.555 24.099 37.961C24.1002 37.9718 24.1035 37.9822 24.1088 37.9917C24.1142 38.0011 24.1214 38.0094 24.13 38.016C25.9464 39.3384 27.9723 40.3458 30.123 40.996C30.138 41.0006 30.154 41.0006 30.169 40.9959C30.184 40.9913 30.1972 40.9822 30.207 40.97C30.669 40.35 31.081 39.695 31.433 39.007C31.454 38.967 31.434 38.919 31.392 38.903C30.746 38.6597 30.1201 38.3661 29.52 38.025C29.5092 38.0188 29.5001 38.0101 29.4935 37.9995C29.487 37.989 29.4831 37.977 29.4823 37.9646C29.4815 37.9522 29.4838 37.9398 29.489 37.9286C29.4942 37.9173 29.5021 37.9075 29.512 37.9C29.638 37.807 29.764 37.71 29.884 37.613C29.8948 37.6042 29.9078 37.5987 29.9216 37.5969C29.9353 37.5952 29.9493 37.5973 29.962 37.603C33.889 39.367 38.142 39.367 42.023 37.603C42.0357 37.5969 42.0498 37.5946 42.0638 37.5961C42.0778 37.5977 42.091 37.6032 42.102 37.612C42.222 37.71 42.347 37.807 42.474 37.9C42.484 37.9073 42.492 37.917 42.4974 37.9282C42.5027 37.9394 42.5052 37.9517 42.5046 37.9641C42.504 37.9765 42.5004 37.9885 42.494 37.9991C42.4876 38.0098 42.4787 38.0186 42.468 38.025C41.87 38.369 41.248 38.66 40.595 38.902C40.585 38.9056 40.5758 38.9113 40.5682 38.9188C40.5606 38.9263 40.5546 38.9353 40.5507 38.9452C40.5468 38.9551 40.5451 38.9658 40.5457 38.9764C40.5463 38.9871 40.5491 38.9975 40.554 39.007C40.914 39.694 41.326 40.348 41.779 40.969C41.7884 40.9817 41.8015 40.9912 41.8166 40.9963C41.8316 41.0013 41.8478 41.0015 41.863 40.997C44.0173 40.3486 46.0466 39.3407 47.865 38.016C47.8739 38.0098 47.8813 38.0017 47.8868 37.9924C47.8923 37.9831 47.8958 37.9727 47.897 37.962C48.397 32.868 47.059 28.442 44.348 24.52C44.3413 24.5072 44.3303 24.4973 44.317 24.492ZM32.02 35.278C30.838 35.278 29.863 34.209 29.863 32.898C29.863 31.586 30.819 30.518 32.02 30.518C33.23 30.518 34.196 31.595 34.177 32.898C34.177 34.21 33.221 35.278 32.02 35.278ZM39.995 35.278C38.812 35.278 37.838 34.209 37.838 32.898C37.838 31.586 38.793 30.518 39.995 30.518C41.205 30.518 42.171 31.595 42.152 32.898C42.152 34.21 41.206 35.278 39.995 35.278Z"
+                                        fill="white" />
+                                </g>
+                                <path class="path-blue"
+                                    d="M100.698 39.18C100.242 39.18 99.81 39.126 99.402 39.018C98.994 38.922 98.622 38.778 98.286 38.586C97.95 38.382 97.65 38.142 97.386 37.866C97.122 37.578 96.894 37.26 96.702 36.912L98.448 35.094C98.616 35.346 98.778 35.556 98.934 35.724C99.09 35.88 99.24 36.012 99.384 36.12C99.54 36.228 99.696 36.306 99.852 36.354C100.02 36.402 100.194 36.426 100.374 36.426C100.662 36.426 100.914 36.36 101.13 36.228C101.358 36.084 101.532 35.892 101.652 35.652C101.772 35.412 101.832 35.13 101.832 34.806V29.064H99.528V26.4H106.764V29.064H104.82V35.166C104.82 35.778 104.712 36.33 104.496 36.822C104.292 37.314 104.004 37.74 103.632 38.1C103.26 38.448 102.822 38.718 102.318 38.91C101.826 39.09 101.286 39.18 100.698 39.18ZM114.752 39.18C113.792 39.18 112.916 39.018 112.124 38.694C111.332 38.37 110.642 37.914 110.054 37.326C109.466 36.738 109.01 36.048 108.686 35.256C108.362 34.464 108.2 33.594 108.2 32.646C108.2 31.698 108.362 30.828 108.686 30.036C109.01 29.244 109.466 28.554 110.054 27.966C110.642 27.378 111.332 26.922 112.124 26.598C112.916 26.274 113.786 26.112 114.734 26.112C115.682 26.112 116.552 26.274 117.344 26.598C118.136 26.922 118.826 27.378 119.414 27.966C120.002 28.554 120.452 29.244 120.764 30.036C121.088 30.828 121.25 31.698 121.25 32.646C121.25 33.582 121.088 34.452 120.764 35.256C120.452 36.048 120.002 36.738 119.414 37.326C118.826 37.914 118.136 38.37 117.344 38.694C116.552 39.018 115.688 39.18 114.752 39.18ZM114.734 36.3C115.226 36.3 115.676 36.21 116.084 36.03C116.504 35.85 116.864 35.598 117.164 35.274C117.476 34.938 117.716 34.548 117.884 34.104C118.052 33.66 118.136 33.174 118.136 32.646C118.136 32.118 118.052 31.632 117.884 31.188C117.716 30.744 117.476 30.36 117.164 30.036C116.864 29.7 116.504 29.442 116.084 29.262C115.676 29.082 115.226 28.992 114.734 28.992C114.242 28.992 113.786 29.082 113.366 29.262C112.958 29.442 112.598 29.7 112.286 30.036C111.974 30.36 111.734 30.744 111.566 31.188C111.41 31.632 111.332 32.118 111.332 32.646C111.332 33.174 111.41 33.666 111.566 34.122C111.734 34.566 111.974 34.95 112.286 35.274C112.598 35.598 112.958 35.85 113.366 36.03C113.786 36.21 114.242 36.3 114.734 36.3ZM123.102 39V36.426H125.226V28.974H123.102V26.4H130.428V28.974H128.286V36.426H130.428V39H123.102ZM133.338 39V26.4H136.074L142.68 35.4L142.086 35.31C142.026 34.914 141.978 34.536 141.942 34.176C141.906 33.816 141.87 33.462 141.834 33.114C141.81 32.766 141.786 32.412 141.762 32.052C141.75 31.692 141.738 31.302 141.726 30.882C141.726 30.462 141.726 30.006 141.726 29.514V26.4H144.696V39H141.924L135.03 29.712L135.948 29.838C136.008 30.414 136.056 30.906 136.092 31.314C136.14 31.71 136.176 32.064 136.2 32.376C136.236 32.688 136.26 32.97 136.272 33.222C136.284 33.474 136.29 33.726 136.29 33.978C136.302 34.218 136.308 34.488 136.308 34.788V39H133.338ZM153.623 39V26.4H158.897C159.821 26.4 160.667 26.556 161.435 26.868C162.203 27.168 162.863 27.6 163.415 28.164C163.979 28.728 164.411 29.394 164.711 30.162C165.011 30.93 165.161 31.776 165.161 32.7C165.161 33.624 165.011 34.476 164.711 35.256C164.411 36.024 163.979 36.69 163.415 37.254C162.863 37.806 162.203 38.238 161.435 38.55C160.667 38.85 159.821 39 158.897 39H153.623ZM156.683 36.912L156.269 36.3H158.807C159.311 36.3 159.761 36.216 160.157 36.048C160.553 35.868 160.889 35.622 161.165 35.31C161.453 34.998 161.675 34.62 161.831 34.176C161.987 33.732 162.065 33.24 162.065 32.7C162.065 32.16 161.987 31.668 161.831 31.224C161.675 30.78 161.453 30.402 161.165 30.09C160.889 29.778 160.553 29.538 160.157 29.37C159.761 29.19 159.311 29.1 158.807 29.1H156.215L156.683 28.524V36.912ZM167.012 39V36.426H169.136V28.974H167.012V26.4H174.338V28.974H172.196V36.426H174.338V39H167.012ZM181.424 39.18C180.596 39.18 179.846 39.084 179.174 38.892C178.514 38.688 177.926 38.4 177.41 38.028C176.894 37.644 176.432 37.194 176.024 36.678L177.878 34.572C178.478 35.376 179.078 35.916 179.678 36.192C180.29 36.468 180.92 36.606 181.568 36.606C181.892 36.606 182.186 36.564 182.45 36.48C182.714 36.396 182.918 36.276 183.062 36.12C183.206 35.952 183.278 35.748 183.278 35.508C183.278 35.328 183.23 35.166 183.134 35.022C183.05 34.878 182.93 34.752 182.774 34.644C182.618 34.536 182.432 34.44 182.216 34.356C182 34.26 181.772 34.182 181.532 34.122C181.292 34.05 181.046 33.99 180.794 33.942C180.098 33.786 179.492 33.594 178.976 33.366C178.46 33.138 178.028 32.862 177.68 32.538C177.344 32.202 177.092 31.824 176.924 31.404C176.756 30.972 176.672 30.492 176.672 29.964C176.672 29.4 176.798 28.884 177.05 28.416C177.314 27.936 177.662 27.528 178.094 27.192C178.538 26.844 179.048 26.58 179.624 26.4C180.2 26.208 180.8 26.112 181.424 26.112C182.252 26.112 182.96 26.202 183.548 26.382C184.148 26.55 184.658 26.796 185.078 27.12C185.51 27.444 185.876 27.834 186.176 28.29L184.286 30.108C184.034 29.796 183.758 29.538 183.458 29.334C183.17 29.13 182.858 28.974 182.522 28.866C182.198 28.758 181.862 28.704 181.514 28.704C181.154 28.704 180.842 28.752 180.578 28.848C180.326 28.932 180.128 29.058 179.984 29.226C179.84 29.382 179.768 29.574 179.768 29.802C179.768 30.006 179.828 30.18 179.948 30.324C180.068 30.468 180.23 30.6 180.434 30.72C180.638 30.828 180.872 30.924 181.136 31.008C181.4 31.08 181.676 31.14 181.964 31.188C182.624 31.32 183.218 31.494 183.746 31.71C184.286 31.926 184.748 32.19 185.132 32.502C185.528 32.814 185.828 33.186 186.032 33.618C186.248 34.038 186.356 34.53 186.356 35.094C186.356 35.97 186.14 36.714 185.708 37.326C185.288 37.926 184.706 38.388 183.962 38.712C183.23 39.024 182.384 39.18 181.424 39.18ZM194.38 39.18C193.432 39.18 192.556 39.024 191.752 38.712C190.96 38.388 190.27 37.938 189.682 37.362C189.094 36.774 188.638 36.084 188.314 35.292C188.002 34.488 187.846 33.606 187.846 32.646C187.846 31.71 188.014 30.846 188.35 30.054C188.686 29.262 189.148 28.578 189.736 28.002C190.336 27.414 191.038 26.958 191.842 26.634C192.658 26.31 193.546 26.148 194.506 26.148C195.106 26.148 195.694 26.226 196.27 26.382C196.846 26.538 197.38 26.772 197.872 27.084C198.376 27.384 198.808 27.744 199.168 28.164L197.296 30.306C197.044 30.042 196.774 29.814 196.486 29.622C196.21 29.418 195.904 29.262 195.568 29.154C195.232 29.046 194.872 28.992 194.488 28.992C194.008 28.992 193.552 29.082 193.12 29.262C192.7 29.43 192.328 29.676 192.004 30C191.692 30.312 191.446 30.696 191.266 31.152C191.086 31.608 190.996 32.118 190.996 32.682C190.996 33.234 191.086 33.738 191.266 34.194C191.446 34.638 191.698 35.022 192.022 35.346C192.346 35.67 192.736 35.916 193.192 36.084C193.66 36.252 194.176 36.336 194.74 36.336C195.124 36.336 195.49 36.282 195.838 36.174C196.186 36.066 196.504 35.922 196.792 35.742C197.092 35.55 197.356 35.334 197.584 35.094L199.06 37.434C198.76 37.77 198.358 38.07 197.854 38.334C197.362 38.598 196.81 38.808 196.198 38.964C195.598 39.108 194.992 39.18 194.38 39.18ZM206.896 39.18C205.936 39.18 205.06 39.018 204.268 38.694C203.476 38.37 202.786 37.914 202.198 37.326C201.61 36.738 201.154 36.048 200.83 35.256C200.506 34.464 200.344 33.594 200.344 32.646C200.344 31.698 200.506 30.828 200.83 30.036C201.154 29.244 201.61 28.554 202.198 27.966C202.786 27.378 203.476 26.922 204.268 26.598C205.06 26.274 205.93 26.112 206.878 26.112C207.826 26.112 208.696 26.274 209.488 26.598C210.28 26.922 210.97 27.378 211.558 27.966C212.146 28.554 212.596 29.244 212.908 30.036C213.232 30.828 213.394 31.698 213.394 32.646C213.394 33.582 213.232 34.452 212.908 35.256C212.596 36.048 212.146 36.738 211.558 37.326C210.97 37.914 210.28 38.37 209.488 38.694C208.696 39.018 207.832 39.18 206.896 39.18ZM206.878 36.3C207.37 36.3 207.82 36.21 208.228 36.03C208.648 35.85 209.008 35.598 209.308 35.274C209.62 34.938 209.86 34.548 210.028 34.104C210.196 33.66 210.28 33.174 210.28 32.646C210.28 32.118 210.196 31.632 210.028 31.188C209.86 30.744 209.62 30.36 209.308 30.036C209.008 29.7 208.648 29.442 208.228 29.262C207.82 29.082 207.37 28.992 206.878 28.992C206.386 28.992 205.93 29.082 205.51 29.262C205.102 29.442 204.742 29.7 204.43 30.036C204.118 30.36 203.878 30.744 203.71 31.188C203.554 31.632 203.476 32.118 203.476 32.646C203.476 33.174 203.554 33.666 203.71 34.122C203.878 34.566 204.118 34.95 204.43 35.274C204.742 35.598 205.102 35.85 205.51 36.03C205.93 36.21 206.386 36.3 206.878 36.3ZM215.762 39V26.4H221.432C222.236 26.4 222.962 26.574 223.61 26.922C224.27 27.27 224.786 27.75 225.158 28.362C225.53 28.962 225.716 29.646 225.716 30.414C225.716 31.206 225.53 31.92 225.158 32.556C224.786 33.18 224.276 33.672 223.628 34.032C222.98 34.392 222.248 34.572 221.432 34.572H218.678V39H215.762ZM222.746 39L219.542 33.312L222.674 32.862L226.238 39H222.746ZM218.678 32.232H221.162C221.474 32.232 221.744 32.166 221.972 32.034C222.212 31.89 222.392 31.692 222.512 31.44C222.644 31.188 222.71 30.9 222.71 30.576C222.71 30.252 222.638 29.97 222.494 29.73C222.35 29.478 222.14 29.286 221.864 29.154C221.6 29.022 221.276 28.956 220.892 28.956H218.678V32.232ZM228.4 39V26.4H233.674C234.598 26.4 235.444 26.556 236.212 26.868C236.98 27.168 237.64 27.6 238.192 28.164C238.756 28.728 239.188 29.394 239.488 30.162C239.788 30.93 239.938 31.776 239.938 32.7C239.938 33.624 239.788 34.476 239.488 35.256C239.188 36.024 238.756 36.69 238.192 37.254C237.64 37.806 236.98 38.238 236.212 38.55C235.444 38.85 234.598 39 233.674 39H228.4ZM231.46 36.912L231.046 36.3H233.584C234.088 36.3 234.538 36.216 234.934 36.048C235.33 35.868 235.666 35.622 235.942 35.31C236.23 34.998 236.452 34.62 236.608 34.176C236.764 33.732 236.842 33.24 236.842 32.7C236.842 32.16 236.764 31.668 236.608 31.224C236.452 30.78 236.23 30.402 235.942 30.09C235.666 29.778 235.33 29.538 234.934 29.37C234.538 29.19 234.088 29.1 233.584 29.1H230.992L231.46 28.524V36.912Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_1_410" x="-4" y="-4" width="288" height="72"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_1_410" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_410"
+                                        result="shape" />
+                                </filter>
+                                <clipPath id="clip0_1_410">
+                                    <rect width="24" height="24" fill="white" transform="translate(24 20)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================footer============================== -->
+    <footer class="flex justify-center items-center"
+        style="background-image: url(./assets/image/webp/squad-bg-img.png);">
+        <div class="container mt-28 mb-28">
+            <div class="flex flex-wrap lg:justify-between justify-around">
+                <div class="lg:w-4/12 w-full flex flex-col items-center">
+                    <a href="/" class="hyper text-2xl lg:text-start text-center  text-white">NAKASHI</a>
+                    <p class="text-white ">COPYRIGHT © 2022. all rights reserved</p>
+                </div>
+                <div class="lg:w-2/12 w-full flex flex-col items-center justify-center max-lg:hidden">
+                    <a href="/">
+                        <svg class="flex animate-bounce" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 14.9998L12 7.49976L4.5 14.9998" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                    <a href="/" class="text-white mt-6">BACK TO TOP</a>
+                </div>
+                <div class="flex lg:w-4/12 w-full gap-4 lg:justify-end justify-center lg:mt-0 mt-[50px]">
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300 max-h-[48px]"><img
+                            src="./assets/image/svg/telegram-icon.svg" alt="telegram icon"></a>
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300 max-h-[48px]"><img
+                            src="./assets/image/svg/discord-icon.svg" alt="telegram icon"></a>
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300 max-h-[48px]"><img
+                            src="./assets/image/svg/twitter-icon.svg" alt="telegram icon"></a>
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300 max-h-[48px]"><img
+                            src="./assets/image/svg/ship-icon.svg" alt="telegram icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

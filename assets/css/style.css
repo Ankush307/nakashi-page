@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/reality-hyper');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Sawarabi+Gothic&display=swap');
+
+* {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sawarabi-gothic {
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.hyper {
+    font-family: "Reality Hyper", 'sans-serif';
+}
+
+.path-blue,
+.line,
+.path-white {
+    transition: all 300ms linear;
+}
+
+.button-hover:hover .path-blue {
+    fill: #403CFF;
+}
+
+.button-hover:hover line {
+    stroke: #403CFF;
+}
+
+.button-hover-1:hover g line {
+    opacity: 100%;
+}
+
+.button-hover:hover .path-white {
+    fill: white;
+}
+
+
+.button-hover-1:hover g .path-blue {
+    fill: black;
+}
+
+.roadmap-card:hover li svg .circle {
+    display: block;
+}
+
+.animate-spin {
+    animation: spin 60s infinite linear !important;
+}
+
+.animate-slide {
+    animation: slide 30s linear infinite;
+}
+
+.swiper-img-size {
+    max-width: 320px;
+    max-height: 480px;
+    margin: 0px 12px;
+    pointer-events: none;
+}
+
+.path-black,
+.path-white {
+    transition: all 300ms linear;
+}
+
+.co-founder-btn:hover .path-white {
+    fill: #403CFF;
+}
+/*  */
+.animate-slide {
+    animation: slide 30s linear infinite;
+}
+
+.animate-slideRTL {
+    animation: slideRTL 30s linear infinite;
+}
+
+@keyframes slideRTL {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
