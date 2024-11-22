@@ -45,9 +45,29 @@ $(".slider").slick({
         },
     ],
 });
+$(".anime-slider").slick({
+    autoplay: false,
+    autoplaySpeed: 1500,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    adaptiveHeight: true,
+    centerMode: true,
+    variableWidth: true,
+    nextArrow: '.next_arrow',
+    prevArrow: '.previous_arrow',
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
 
 // const radioButtons = document.querySelectorAll('input[name="accordion"]');
-
 // radioButtons.forEach(radio => {
 //     radio.addEventListener('change', () => {
 //         radioButtons.forEach(rb => {

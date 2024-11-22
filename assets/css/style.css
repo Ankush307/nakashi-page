@@ -100,3 +100,11 @@
         transform: translateX(-100%);
     }
 }
+/* =============================== */
+.slick-next:before {
+    content: '→';
+}
+
+.slick-next:before, .slick-prev:before{
+
+}
