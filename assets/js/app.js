@@ -11,6 +11,7 @@ menubar.addEventListener("click", function () {
     menubarSecond.classList.toggle("rotate-[40deg]")
     menubarFirst.classList.toggle("translate-x-[-1px]")
     menubarFirst.classList.toggle("translate-y-[-7px]")
+    menubar.classList.toggle("fixed")
     menuList.classList.toggle("right-0");
     body.classList.toggle("overflow-hidden")
     menuBar.addEventListener('click', () => {
