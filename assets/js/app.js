@@ -46,6 +46,7 @@ $(".slider").slick({
         },
     ],
 });
+// ================================anime-slider=====================================
 $(".anime-slider").slick({
     autoplay: false,
     autoplaySpeed: 1500,

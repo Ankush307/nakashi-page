@@ -100,3 +100,13 @@
         transform: translateX(-100%);
     }
 }
+
+
+.previous-btn:hover svg g .path-blue{
+    fill: #403CFF;
+    opacity: 100%;
+}
+.next-btn:hover svg g .path-blue{
+    fill: #403CFF;
+    opacity: 100%;
+}
