@@ -110,5 +110,8 @@
     fill: #403CFF;
     opacity: 100%;
 }
-
-
+.video{
+    max-width: 1140px;
+    max-height: 800px;
+    width: 100%;
+}

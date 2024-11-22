@@ -68,3 +68,23 @@ $(".anime-slider").slick({
         },
     ],
 });
+document
+    .getElementById("play-video")
+    .addEventListener("click", function () {
+        const videoDiv = document.querySelector(".video");
+        const videoURL = "https://youtu.be/0j3_e3bDZfQ";
+
+        // Replace the innerHTML with the iframe for the video
+        videoDiv.innerHTML = `
+    <iframe width="100%" 
+    height="100%" src="https://www.youtube.com/embed/0j3_e3bDZfQ"
+     title="THIS IS 4K ANIME (Satoru Gojo)" 
+     frameborder="0" allow="accelerometer; 
+     autoplay; clipboard-write; 
+     encrypted-media; gyroscope; 
+     picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen>
+     </iframe>
+    `;
+    });
