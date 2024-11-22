@@ -66,20 +66,3 @@ $(".anime-slider").slick({
         },
     ],
 });
-
-// const radioButtons = document.querySelectorAll('input[name="accordion"]');
-// radioButtons.forEach(radio => {
-//     radio.addEventListener('change', () => {
-//         radioButtons.forEach(rb => {
-//             const icon = document.querySelector(`#icon${rb.id.replace('item', '')}`);
-//             if (rb.checked) {
-//                 icon.style.transform = 'rotate(180deg)';
-//                 icon.style.fill = 'fill-[#000000]';
-//             } else {
-//                 icon.style.transform = 'rotate(0deg)';
-//                 icon.style.fill = 'white';
-//             }
-//         });
-//     });
-// });
-// document.querySelector('input[name="accordion"]:checked').dispatchEvent(new Event('change'));
