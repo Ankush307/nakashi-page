@@ -52,7 +52,7 @@ $(".anime-slider").slick({
     autoplaySpeed: 1500,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 3,
     adaptiveHeight: true,
     centerMode: true,
     variableWidth: true,

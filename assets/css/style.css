@@ -106,7 +106,9 @@
     fill: #403CFF;
     opacity: 100%;
 }
-.next-btn:hover svg g .path-blue{
+.next-btn:hover svg .path-blue{
     fill: #403CFF;
     opacity: 100%;
 }
+
+
