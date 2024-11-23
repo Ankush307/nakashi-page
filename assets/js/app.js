@@ -1,3 +1,4 @@
+// =========================================menubar======
 const menubar = document.querySelector(".menubar");
 const menuList = document.querySelector(".menulist");
 const menubarFirst = document.querySelector(".menubarFirst");
@@ -12,6 +13,7 @@ menubar.addEventListener("click", function () {
     menubarFirst.classList.toggle("translate-x-[-1px]")
     menubarFirst.classList.toggle("translate-y-[-7px]")
     menubar.classList.toggle("fixed")
+    menubar.classList.toggle("mr-8")
     menuList.classList.toggle("right-0");
     body.classList.toggle("overflow-hidden")
     menuBar.addEventListener('click', () => {
@@ -26,6 +28,8 @@ for (let i = 1; i <= 4000; i++) {
         }, i * 2);
     })(i);
 }
+// ==============================acc=================
+
 // ======================team slider=====================
 $(".slider").slick({
     autoplay: true,
@@ -68,13 +72,11 @@ $(".anime-slider").slick({
         },
     ],
 });
+// =============================video link
 document
     .getElementById("play-video")
     .addEventListener("click", function () {
         const videoDiv = document.querySelector(".video");
-        const videoURL = "https://youtu.be/0j3_e3bDZfQ";
-
-        // Replace the innerHTML with the iframe for the video
         videoDiv.innerHTML = `
     <iframe width="100%" 
     height="100%" src="https://www.youtube.com/embed/0j3_e3bDZfQ"
@@ -88,3 +90,16 @@ document
      </iframe>
     `;
     });
+    // 
+
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        Infinity: true,
+        centeredSlides: false,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });

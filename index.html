@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script>
         tailwind.config = {
             theme: {
@@ -94,7 +95,7 @@
             <div class="flex flex-wrap max-lg:flex-col-reverse justify-around ">
                 <div
                     class="lg:w-5/12 flex items-center flex-col justify-center bg-cover max-lg:bg-[url('./assets/image/webp/hero-sm-bg-img.png')]">
-                    <div class="flex items-center lg:gap-10 xl:translate-x-[-100px]">
+                    <div class="flex items-center lg:gap-10 xl:translate-x-[-100px] lg:mt-[90px]">
                         <div class="max-w-[72px] flex items-center flex-col">
                             <p
                                 class="text-white flex flex-col lg:text-7xl md:text-6xl sm:text-5xl text-4xl max-lg:hidden mb-12">
@@ -113,7 +114,7 @@
                                 4000 Pages Manga NFTs Collections</p>
                         </div>
                     </div>
-                    <div class="flex gap-4 mt-24 xl:translate-x-[-100px] max-lg:hidden lg:mb-8">
+                    <div class="flex gap-4 mt-16 xl:translate-x-[-100px] max-lg:hidden lg:mb-8">
                         <a href="/"
                             class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
                                 src="./assets/image/svg/telegram-icon.svg" alt="telegram icon"></a>
@@ -192,8 +193,8 @@
     </section>
     <!-- ==================slider-1 --------================-->
     <section id="chatacter"
-        class="px-3 flex overflow-hidden items-center lg:pt-[100px] sm:pt-16 pt-12  lg:pb-[200px] sm:pb-24 pb-12 bg-[url(./assets/image/webp/character-bg-img.png)] bg-cover bg-no-repeat relative -mt-1">
-        <div class="container">
+        class="px-3 flex items-center lg:pt-[100px] sm:pt-16 pt-12  lg:pb-[200px] sm:pb-24 pb-12 bg-[url(./assets/image/webp/character-bg-img.png)] bg-cover bg-no-repeat relative -mt-1">
+        <div class="container ">
             <div
                 class="max-lg:mx-auto lg:hidden max-lg:bg-[url(./assets/image/svg/chara-small.svg)] h-fit bg-[url(./assets/image/webp/chara-bg-img.png)]  bg-no-repeat bg-center max-w-[531px]">
                 <p class="text-white text-[64px] font-normal hyper max-lg:text-4xl max-lg:text-center">
@@ -209,10 +210,10 @@
                 since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                 specimen
                 book.</p>
-            <div class="flex items-center max-lg:flex-col-reverse overflow-hidden">
+            <div class="flex items-center max-lg:flex-col-reverse">
                 <div class="w-6/12 max-lg:w-full">
                     <div
-                        class="max-lg:hidden max-lg:bg-[url(./assets/image/svg/chara-small.svg)] h-fit bg-[url(./assets/image/webp/chara-bg-img.png)]  bg-no-repeat bg-center max-w-[531px]">
+                        class="max-lg:hidden bg-[url(./assets/image/webp/chara-bg-img.png)] bg-no-repeat bg-center max-w-[531px]">
                         <p class="text-white text-[64px] font-normal hyper max-lg:text-4xl max-lg:text-center">
                             CHARACTER</p>
                         <p class="leading-[100%] text-white font-normal text-2xl max-lg:text-center">キャラクター</p>
@@ -228,7 +229,7 @@
                         book.</p>
 
                     <div
-                        class="bg-cover bg-[url(./assets/image/webp/chara-text-bg-img.png)] bg-no-repeat max-w-[655px] mt-28 max-lg:mt-10 max-md:mt-5 max-lg:mb-10 max-md:mb-5">
+                        class="bg-cover bg-[url(./assets/image/webp/chara-text-bg-img.png)] bg-no-repeat mt-28 max-lg:mt-10 max-md:mt-5 max-lg:mb-10 max-md:mb-5">
                         <p class="hyper text-white text-5xl leading-[100%] font-normal pt-[60px] ps-[60px]">THALIK
                         </p>
                         <p class="ps-[60px] text-[#F4F4F4] text-sm font-light max-w-[415px] pt-4 leading-[150%]">
@@ -299,22 +300,37 @@
                             </svg></a>
 
                     </div>
-                    <div class="anime-slider flex items-center w-full">
+                    <!-- <div class="anime-slider flex items-center w-full">
                         <img src="/assets/image/webp/slick-slider-img1.png" alt="green-flash"
-                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[555px]" />
                         <img src="/assets/image/webp/slick-slider-img2.png" alt="nakashi-img"
-                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[555px]" />
                         <img src="/assets/image/webp/slick-slider-img1.png" alt="green-flash"
-                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[555px]" />
                         <img src="/assets/image/webp/slick-slider-img2.png" alt="nakashi-img"
-                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[440px]" />
-                    </div>
+                            class="w-full max-w-[600px] h-[800px] pointer-events-none max-md:object-contain max-lg:h-[555px]" />
+                    </div> -->
+                    <div #swiperRef="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="/assets/image/webp/slick-slider-img1.png" alt="green-flash"
+                            class="w-full max-w-[600px] h-[800px] max-md:object-contain max-lg:h-[440px]"/></div>
+                          <div class="swiper-slide"><img src="/assets/image/webp/slick-slider-img2.png" alt="green-flash"
+                            class="w-full max-w-[600px] h-[800px] max-md:object-contain max-lg:h-[440px]"/></div>
+                          <div class="swiper-slide"><img src="/assets/image/webp/slick-slider-img1.png" alt="green-flash"
+                            class="w-full max-w-[600px] h-[800px] max-md:object-contain max-lg:h-[440px]"/></div>
+                          <div class="swiper-slide"><img src="/assets/image/webp/slick-slider-img2.png" alt="green-flash"
+                            class="w-full max-w-[600px] h-[800px] max-md:object-contain max-lg:h-[440px]"/></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ===================gallery page============== -->
-    <section id="gallery" class="max-w-[1920px] relative lg:mb-[90px] sm:pb-16 pb-8 mx-auto">
+    <section id="gallery" class="max-w-[1920px] relative mx-auto">
         <img class="mt-[-1px] w-full" src="./assets/image/webp/sec-2-bottom-layer.png" alt="">
         <div class="container mt-12 max-xl:px-4">
             <div class="flex flex-wrap justify-between">
@@ -638,7 +654,7 @@
     </section>
     <!-- =================video section----================= -->
     <section id="howitwork"
-        class="pt-[100px] max-lg:pt-[50px] max-md:pt-10 max-sm:pt-5 bg-[url('assets/images/png/how-It-works-bg-img.png')] bg-no-repeat bg-cover bg-center relative">
+        class="pt-[100px] max-lg:pt-[50px] pb-[65px] max-md:pt-10 max-sm:pt-5 bg-[url('assets/images/png/how-It-works-bg-img.png')] bg-no-repeat bg-cover bg-center relative">
         <img src="/assets/image/webp/yellow-layer.png" alt="layer" class="absolute right-0 top-[55px] max-xl:hidden">
         <div class="container">
             <div class="mx-auto w-full max-sm:max-w-[308px] max-w-[547px]">
@@ -649,21 +665,29 @@
                 Mixed reality NFTs project
             </p>
             <p
-                class="max-w-[753px] mx-auto text-center text-off-black font-light text-sm pt-6 leading-[150%] pb-[50px] max-lg:pb-10 max-md:pb-8 max-sm:pb-5">
+                class="max-w-[753px] mx-auto text-center text-off-black font-light text-sm pt-6 leading-[150%] pb-[50px] max-lg:pb-10 max-md:pb-8 max-sm:pb-5 max-sm:px-4 ">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy text ever
                 since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book.
             </p>
-            <div class="flex items-center justify-center flex-col">
+            <div class="flex items-center justify-center flex-col ">
                 <div>
-                    <img src="./assets/image/svg/blue-btn.svg" alt="btn" class="pointer-events-none cursor-pointer" />
+                    <img src="./assets/image/svg/blue-btn.svg" alt="btn" class="pointer-events-none cursor-pointer max-sm:max-w-[300px]" />
                 </div>
                 <div
-                    class="video bg-[url('./assets/image/webp/video-img.png')] bg-center bg-no-repeat bg-cover flex items-center justify-center w-full max-w-[1140px] h-[642px] max-md:h-[212px] mb-[210px] max-md:mb-12">
+                    class="video max-lg:hidden bg-[url('./assets/image/webp/video-img.png')] bg-center bg-no-repeat bg-cover flex items-center justify-center w-full max-w-[1140px] h-[642px] max-md:h-[212px] mb-[210px] max-md:mb-12">
                     <div id="play-video"
-                        class="w-[64px] cursor-pointer h-[64px] rounded-full bg-slate-700 flex items-center justify-center">
+                        class="w-[64px] cursor-pointer h-[64px] rounded-full bg-[#333333] flex items-center justify-center">
                         <img src="/assets/image/svg/video-icon.svg" alt="play-btn" />
+                    </div>
+                </div>
+                <div
+                    class="video lg:hidden max-sm:m-0 max-lg:mt-[-105px] max-lg:mb-[-50px]  relative bg-center bg-no-repeat bg-cover flex items-center justify-center w-full max-w-[1140px] h-[642px] max-md:h-[212px] mb-[210px] max-md:mb-12">
+                    <img src="./assets/image/webp/video-img.png" alt="">
+                    <div id="play-video"
+                        class="w-[64px] max-sm:h-[35px] max-sm:w-[35px] absolute top-[45%] translate-x-[-60%]translate-y-[-60%] left-[45%] cursor-pointer h-[64px] rounded-full bg-[#333333] flex items-center justify-center">
+                        <img class="" src="/assets/image/svg/video-icon.svg" alt="play-btn" />
                     </div>
                 </div>
             </div>
@@ -673,14 +697,14 @@
     </section>
     <!-- ==============Road map section-================== -->
     <section id="roadmap"
-        class="flex lg:pt-[100px] lg:pb-[100px] pt-10 pb-10 flex-col min-h-screen bg-[url('./assets/image/webp/faq-bg-img.png')] relative justify-center items-center">
+        class="flex lg:pt-[100px] lg:pb-[100px] mt-[-1px] pt-10 pb-10 flex-col min-h-screen bg-[url('./assets/image/webp/faq-bg-img.png')] relative justify-center items-center">
         <img class="max-w-[784px] mx-auto w-full  lg:mb-[100px] sm:mb-16 mb-[50px]"
             src="./assets/image/webp/roadmap-img.png" alt="roadmap">
         <div class="container max-lg:px-3">
             <h2 class="text-white text-center lg:text-2xl sm:text-xl text-base max-sm:px-16">There’s more than one star
                 in the galaxy</h2>
             <div class="overflow-hidden max-w-[700px] w-full mx-auto">
-                <img class="max-w-[700px] mx-auto w-full animate-spin" src="./assets/image/webp/galaxy-img.png"
+                <img class="max-w-[700px] mx-auto w-full animate-spin mt-[-25px]" src="./assets/image/webp/galaxy-img.png"
                     alt="galaxy">
             </div>
         </div>
@@ -1476,6 +1500,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 

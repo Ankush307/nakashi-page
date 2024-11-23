@@ -115,3 +115,59 @@
     max-height: 800px;
     width: 100%;
 }
+input[name="accordion"]:checked+label svg path {
+    fill: blue;
+  }
+
+  label svg path {
+    fill: white;
+  }
+
+  svg {
+    transform: rotate(0deg);
+    transition: transform 0.4s ease;
+  }
+
+  input[name="accordion"]:checked+label svg {
+    transform: rotate(180deg);
+  }
+  /* 
+  
+  */
+  .swiper {
+    width:400px;
+    height: 100%;
+  }
+
+
+  .swiper-slide img {
+    display: block;
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 127%;
+    height: 800px;
+
+  }
+  .swiper-slide-active{
+    opacity: 100%;
+    width: 600px;
+    height: 800px;
+    width: 100%;
+    z-index: 10;
+    
+  }
+  .swiper-slide-next{
+    opacity: 50%;
+    width:70%;
+    scale: 0.8;
+    margin-left: -50px;
+    
+  }
+  .swiper-slide-prev{
+   opacity: 0;
+   transition: all 300ms linear;
+  }
